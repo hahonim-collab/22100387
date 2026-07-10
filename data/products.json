@@ -152,7 +152,7 @@
   {
     "id": "prd-0008",
     "category": "티",
-    "name": "티바나 더블스트랭스 티 (블랙티, 민트티, 더블 블랙티 베이스)",
+    "name": "티바나 더블스트랭스 티",
     "storage": "실온",
     "portionRule": {
       "type": "hour",
@@ -165,7 +165,7 @@
       "display": ""
     },
     "tag": "숫자 Tag + Price Tag",
-    "note": "",
+    "note": "블랙티, 민트티, 더블 블랙티 베이스",
     "keywords": [],
     "enabled": true,
     "order": 8
@@ -764,9 +764,7 @@
     "note": "",
     "keywords": [
       "커피베이스",
-      "커피 베이스",
-      "라이트 커피 베이스",
-      "라이트커피베이스"
+      "커피 베이스"
     ],
     "enabled": true,
     "order": 36
@@ -790,9 +788,7 @@
     "note": "",
     "keywords": [
       "크림베이스",
-      "크림 베이스",
-      "라이트 크림 베이스",
-      "라이트크림베이스"
+      "크림 베이스"
     ],
     "enabled": true,
     "order": 37
