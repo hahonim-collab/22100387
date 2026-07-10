@@ -1364,7 +1364,7 @@
     "storage": "냉장",
     "portionRule": {
       "type": "day",
-      "value": 1,
+      "value": 2,
       "display": "당일"
     },
     "openRule": {
