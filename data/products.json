@@ -205,7 +205,10 @@
     },
     "tag": "숫자 Tag + Price Tag",
     "note": "제조 후 24H",
-    "keywords": [],
+    "keywords": [
+      "하프앤하프",
+      "하프 앤 하프"
+    ],
     "enabled": true,
     "order": 10
   },
