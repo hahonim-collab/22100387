@@ -655,7 +655,7 @@
     "tag": "수기기입 또는 Price Tag",
     "note": "",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 31
   },
   {
