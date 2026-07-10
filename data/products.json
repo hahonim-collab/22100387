@@ -2277,9 +2277,9 @@
       "display": ""
     },
     "openRule": {
-      "type": "none",
-      "value": 0,
-      "display": ""
+      "type": "day",
+      "value": 21,
+      "display": "21d"
     },
     "tag": "",
     "note": "",
