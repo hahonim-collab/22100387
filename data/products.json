@@ -152,7 +152,7 @@
   {
     "id": "prd-0008",
     "category": "티",
-    "name": "티바나 더블스트랭스 티 (블랙티, 민트티, 더블 블랙티 베이스)",
+    "name": "티바나 더블스트랭스 티",
     "storage": "실온",
     "portionRule": {
       "type": "hour",
@@ -165,8 +165,13 @@
       "display": ""
     },
     "tag": "숫자 Tag + Price Tag",
-    "note": "",
-    "keywords": [],
+    "note": "블랙티, 민트티, 더블 블랙티 베이스",
+    "keywords": [
+      "블랙티",
+      "민트티",
+      "더블블랙티베이스",
+      "더블 블랙티 베이스"
+    ],
     "enabled": true,
     "order": 8
   },
@@ -1419,7 +1424,7 @@
     "portionRule": {
       "type": "day",
       "value": 3,
-      "display": "3d"
+      "display": "소분 후 3d"
     },
     "openRule": {
       "type": "none",
