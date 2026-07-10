@@ -783,7 +783,10 @@
     },
     "tag": "숫자 Tag + Price Tag",
     "note": "",
-    "keywords": [],
+    "keywords": [
+      "크림베이스",
+      "크림 베이스"
+    ],
     "enabled": true,
     "order": 37
   },
