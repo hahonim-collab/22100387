@@ -2274,14 +2274,14 @@
     "portionRule": {
       "type": "none",
       "value": 0,
-      "display": ""
+      "display": "소분 X"
     },
     "openRule": {
       "type": "day",
       "value": 21,
       "display": "21d"
     },
-    "tag": "",
+    "tag": "수기기입",
     "note": "",
     "keywords": [],
     "enabled": true,
