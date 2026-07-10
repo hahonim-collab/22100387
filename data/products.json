@@ -2208,7 +2208,7 @@
     "portionRule": {
       "type": "day",
       "value": 3,
-      "display": "3D"
+      "display": "3d"
     },
     "openRule": {
       "type": "none",
