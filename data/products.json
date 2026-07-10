@@ -274,8 +274,8 @@
   },
   {
     "id": "prd-0014",
-    "name": "슈크림 휘핑",
     "category": "휘핑크림/제조베이스",
+    "name": "슈크림 휘핑",
     "storage": "냉장",
     "portionRule": {
       "type": "hour",
@@ -479,7 +479,7 @@
     "tag": "숫자 Tag + Price Tag",
     "note": "제조 후 24H",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 23
   },
   {
@@ -1004,7 +1004,7 @@
     "tag": "숫자 Tag + Price Tag",
     "note": "개봉 보관시 표시일까지",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 48
   },
   {
@@ -1970,7 +1970,7 @@
     "tag": "숫자 Tag + Price Tag",
     "note": "믹싱 피처",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 94
   },
   {
