@@ -1,8 +1,8 @@
 [
   {
     "id": "prd-0001",
-    "category": "커피",
     "name": "오늘의 커피 URN",
+    "category": "커피",
     "storage": "71℃ 이상",
     "portionRule": {
       "type": "hour",
