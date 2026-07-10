@@ -2131,7 +2131,7 @@
     "tag": "숫자 Tag + Price Tag",
     "note": "제조 후 24H",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 102
   }
 ]
