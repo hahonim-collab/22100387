@@ -761,10 +761,12 @@
       "display": "전량 소분"
     },
     "tag": "숫자 Tag + Price Tag",
-    "note": "커피베이스, 라이트커피베이스",
+    "note": "",
     "keywords": [
       "커피베이스",
-      "커피 베이스"
+      "커피 베이스",
+      "라이트 커피",
+      "라이트커피"
     ],
     "enabled": true,
     "order": 36
@@ -785,7 +787,7 @@
       "display": "전량 소분"
     },
     "tag": "숫자 Tag + Price Tag",
-    "note": "크림베이스, 라이트 크림베이스",
+    "note": "",
     "keywords": [
       "크림베이스",
       "크림 베이스"
