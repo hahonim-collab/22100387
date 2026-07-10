@@ -769,7 +769,7 @@
   {
     "id": "prd-0037",
     "category": "소스/시럽",
-    "name": "크림향시럽 저당 포함",
+    "name": "크림향시럽 (저당 포함)",
     "storage": "실온",
     "portionRule": {
       "type": "day",
