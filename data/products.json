@@ -997,7 +997,7 @@
     "tag": "숫자 Tag + Price Tag",
     "note": "",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 47
   },
   {
