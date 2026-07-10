@@ -196,7 +196,7 @@
     "portionRule": {
       "type": "hour",
       "value": 24,
-      "display": "24H"
+      "display": "24h"
     },
     "openRule": {
       "type": "none",
@@ -204,7 +204,7 @@
       "display": ""
     },
     "tag": "숫자 Tag + Price Tag",
-    "note": "제조 후 24H",
+    "note": "제조 후 24h",
     "keywords": [
       "하프앤하프",
       "하프 앤 하프"
@@ -214,13 +214,13 @@
   },
   {
     "id": "prd-0011",
-    "category": "휘핑크림/제조베이스",
     "name": "딸기 리프레셔 믹스",
+    "category": "휘핑크림/제조베이스",
     "storage": "냉장",
     "portionRule": {
       "type": "hour",
       "value": 24,
-      "display": "24H"
+      "display": "24h"
     },
     "openRule": {
       "type": "none",
@@ -228,7 +228,7 @@
       "display": ""
     },
     "tag": "숫자 Tag + Price Tag",
-    "note": "제조 후 24H, 믹싱피처",
+    "note": "제조 후 24h, 믹싱피처",
     "keywords": [],
     "enabled": true,
     "order": 11
