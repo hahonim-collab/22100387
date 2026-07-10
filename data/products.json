@@ -1342,14 +1342,14 @@
     "name": "바닐라 크림 베이스 1,000ml",
     "storage": "냉장",
     "portionRule": {
-      "type": "day",
-      "value": 2,
-      "display": "당일"
-    },
-    "openRule": {
       "type": "none",
       "value": 0,
       "display": ""
+    },
+    "openRule": {
+      "type": "day",
+      "value": 2,
+      "display": "당일"
     },
     "tag": "냉장고 예시문구 부착대체",
     "note": "",
