@@ -887,7 +887,7 @@
     "openRule": {
       "type": "month",
       "value": 1,
-      "display": "1M"
+      "display": "1m"
     },
     "tag": "숫자 Tag + Price Tag",
     "note": "",
