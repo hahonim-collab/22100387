@@ -2178,5 +2178,26 @@
     "keywords": [],
     "enabled": true,
     "order": 104
+  },
+  {
+    "id": "prd-1783701490562",
+    "category": "파우더",
+    "name": "블루 스피룰리나 파우더",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7D"
+    },
+    "openRule": {
+      "type": "month",
+      "value": 3,
+      "display": "3M"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "매쉬망 쉐이커",
+    "keywords": [],
+    "enabled": true,
+    "order": 105
   }
 ]
