@@ -1,21 +1,21 @@
 [
   {
     "id": "prd-0001",
-    "name": "오늘의 커피 URN",
     "category": "커피",
-    "storage": "71℃ 이상",
+    "name": "오늘의 커피 URN",
+    "storage": "타이머 / 71℃ 이상",
     "portionRule": {
       "type": "hour",
       "value": 1,
-      "display": "추출 후 1H"
+      "display": "1H"
     },
     "openRule": {
       "type": "none",
       "value": 0,
       "display": ""
     },
-    "tag": "타이머",
-    "note": "",
+    "tag": "기록 작성",
+    "note": "추출 후 1H",
     "keywords": [],
     "enabled": true,
     "order": 1
