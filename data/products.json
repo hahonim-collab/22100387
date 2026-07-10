@@ -1338,8 +1338,8 @@
   },
   {
     "id": "prd-0065",
-    "category": "유제품",
     "name": "저지방우유 1,000ml",
+    "category": "유제품",
     "storage": "냉장",
     "portionRule": {
       "type": "none",
@@ -1352,7 +1352,7 @@
       "display": "2d"
     },
     "tag": "냉장고 예시문구 부착대체",
-    "note": "개봉 후 다음날까지 사용합니다",
+    "note": "개봉 후 다음 날까지 사용합니다",
     "keywords": [],
     "enabled": true,
     "order": 65
