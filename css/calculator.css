@@ -84,3 +84,5 @@
 @media(max-width:560px){
   .quick-base-row{grid-template-columns:1fr}
 }
+
+.rule-details{display:contents}

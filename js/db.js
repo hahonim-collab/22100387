@@ -2,13 +2,22 @@ const STORAGE_KEY="iqc_products_v2";
 const META_KEY="iqc_products_meta_v2";
 
 function clone(value){return JSON.parse(JSON.stringify(value));}
-function normalizeRule(rule={}){
+function normalizeRule(rule={},index=0){
   const allowed=["none","hour","day","month"];
   return {
+    id:String(rule.id||`rule-${Date.now()}-${index}`),
+    label:String(rule.label||"기준").trim()||"기준",
     type:allowed.includes(rule.type)?rule.type:"none",
     value:Number.isFinite(Number(rule.value))?Math.max(0,Number(rule.value)):0,
     display:String(rule.display??"").trim()
   };
+}
+function legacyRules(product){
+  if(Array.isArray(product.rules))return product.rules;
+  const rules=[];
+  if(product.portionRule){rules.push({id:"rule-portion",label:"소분·제조 후",...product.portionRule});}
+  if(product.openRule){rules.push({id:"rule-open",label:"개봉 후",...product.openRule});}
+  return rules;
 }
 function normalizeProduct(product,index=0){
   return {
@@ -16,8 +25,7 @@ function normalizeProduct(product,index=0){
     category:String(product.category||"미분류").trim()||"미분류",
     name:String(product.name||"이름 없음").trim()||"이름 없음",
     storage:String(product.storage||"").trim(),
-    portionRule:normalizeRule(product.portionRule),
-    openRule:normalizeRule(product.openRule),
+    rules:legacyRules(product).map(normalizeRule),
     tag:String(product.tag||"").trim(),
     note:String(product.note||"").trim(),
     keywords:Array.isArray(product.keywords)?product.keywords.map(String).map(v=>v.trim()).filter(Boolean):[],

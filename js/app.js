@@ -50,30 +50,37 @@ function filtered(){
   const q=norm($("search").value);
   return products.filter(p=>p.enabled).filter(p=>activeCategory==="전체"||p.category===activeCategory).filter(p=>!q||norm([p.name,p.category,p.storage,p.note,p.tag,...p.keywords].join(" ")).includes(q)).sort((a,b)=>a.order-b.order||a.name.localeCompare(b.name,"ko"));
 }
+function productRuleSummary(product){
+  return product.rules.length?product.rules.map(r=>`${r.label} ${ruleLabel(r)}`).join(" · "):"계산 기준 없음";
+}
 function renderList(){
   const rows=filtered();$("categoryTitle").textContent=$("search").value?`"${$("search").value}" 검색 결과`:activeCategory==="전체"?"전체 품목":activeCategory;
   $("itemCount").textContent=`${rows.length}개`;
-  $("list").innerHTML=rows.length?rows.map(p=>`<button class="item-card" type="button" data-id="${p.id}"><strong>${p.name}</strong><span>${p.category} · 보관 ${p.storage||"-"} · 소분 후 ${ruleLabel(p.portionRule)} · 개봉 후 ${ruleLabel(p.openRule)}</span></button>`).join(""):`<div class="empty">조건에 맞는 품목이 없습니다.</div>`;
+  $("list").innerHTML=rows.length?rows.map(p=>`<button class="item-card" type="button" data-id="${p.id}"><strong>${p.name}</strong><span>${p.category} · 보관 ${p.storage||"-"} · ${productRuleSummary(p)}</span></button>`).join(""):`<div class="empty">조건에 맞는 품목이 없습니다.</div>`;
 }
 function pick(id){
   selected=products.find(p=>p.id===id);if(!selected)return;
   $("result").hidden=false;$("rName").textContent=selected.name;$("rCat").textContent=selected.category;$("rStorage").textContent=selected.storage||"-";
-  $("rStorage2").textContent=selected.storage||"-";$("rPortion").textContent=ruleLabel(selected.portionRule);$("rOpen").textContent=ruleLabel(selected.openRule);
+  $("rStorage2").textContent=selected.storage||"-";
+  $("rRules").innerHTML=selected.rules.length?selected.rules.map(r=>`<dt>${r.label}</dt><dd>${ruleLabel(r)}</dd>`).join(""):`<dt>계산 기준</dt><dd>-</dd>`;
   $("rTag").textContent=selected.tag||"-";$("rNote").textContent=selected.note||"-";
-  $("mode").innerHTML=`<option value="portion">소분·제조일 기준: ${ruleLabel(selected.portionRule)}</option><option value="open">개봉일 기준: ${ruleLabel(selected.openRule)}</option>`;
-  $("mode").value=isCalculable(selected.portionRule)?"portion":"open";calc();$("result").scrollIntoView({behavior:"smooth",block:"start"});
+  $("mode").innerHTML=selected.rules.length?selected.rules.map(r=>`<option value="${r.id}">${r.label}: ${ruleLabel(r)}</option>`).join(""):`<option value="">계산 기준 없음</option>`;
+  const firstCalculable=selected.rules.find(isCalculable);
+  $("mode").value=(firstCalculable||selected.rules[0]||{}).id||"";
+  calc();$("result").scrollIntoView({behavior:"smooth",block:"start"});
 }
 function calc(){
-  if(!selected)return;const rule=$("mode").value==="portion"?selected.portionRule:selected.openRule;
-  $("hourField").hidden=rule.type!=="hour";const hour=String($("baseHour").value).padStart(2,"0");const base=new Date(`${$("baseDate").value}T${hour}:00:00`);
+  if(!selected)return;
+  const rule=selected.rules.find(r=>r.id===$("mode").value);
+  $("hourField").hidden=!rule||rule.type!=="hour";
+  const hour=String($("baseHour").value).padStart(2,"0");const base=new Date(`${$("baseDate").value}T${hour}:00:00`);
   const exp=calculateExpiry(base,rule);$("expireBox").className="expire-box";
-  if(exp)$("expireBox").classList.add(dayClasses[exp.getDay()]);
-  else $("expireBox").classList.add("invalid");
-  if(!exp){$("expireDate").textContent="자동 계산 불가";$("expireMeta").textContent=`선택 기준: ${ruleLabel(rule)} · 날짜 계산이 없는 기준입니다.`;return;}
+  if(exp)$("expireBox").classList.add(dayClasses[exp.getDay()]);else $("expireBox").classList.add("invalid");
+  if(!exp){$("expireDate").textContent="자동 계산 불가";$("expireMeta").textContent=`선택 기준: ${rule?`${rule.label} ${ruleLabel(rule)}`:"-"} · 날짜 계산이 없는 기준입니다.`;return;}
   const y=exp.getFullYear(),m=String(exp.getMonth()+1).padStart(2,"0"),d=String(exp.getDate()).padStart(2,"0");
   const time=rule.type==="hour"?` ${String(exp.getHours()).padStart(2,"0")}:${String(exp.getMinutes()).padStart(2,"0")}`:"";
   $("expireDate").textContent=`${y}-${m}-${d}${time} ${dayNames[exp.getDay()]}`;
-  $("expireMeta").textContent=`${$("mode").value==="portion"?"소분·제조일":"개봉일"} 기준 ${ruleLabel(rule)}`;
+  $("expireMeta").textContent=`${rule.label} 기준 ${ruleLabel(rule)}`;
 }
 renderQuick();
 $("quickGrid").addEventListener("click",e=>{const b=e.target.closest("[data-index]");if(!b)return;const d=quickDate(quickRules[+b.dataset.index]);$("baseDate").value=localDateValue(d);document.querySelectorAll(".quick-date").forEach(x=>x.classList.toggle("active",x===b));calc();});

@@ -97,24 +97,16 @@
             <div class="field full"><label for="name">품목명 *</label><input id="name" required></div>
             <div class="field"><label for="category">카테고리 *</label><input id="category" list="categoryOptions" required><datalist id="categoryOptions"></datalist></div>
             <div class="field"><label for="storage">보관 방법</label><input id="storage"></div>
-
-            <fieldset class="rule-fieldset">
-              <legend>소분·제조 후</legend>
-              <div class="rule-grid">
-                <div class="field"><label for="portionType">유형</label><select id="portionType"></select></div>
-                <div class="field"><label for="portionValue">값</label><input id="portionValue" type="number" min="0"></div>
-                <div class="field full"><label for="portionDisplay">화면 표기</label><input id="portionDisplay" placeholder="예: 2d, 24H, 소분 X"></div>
+            <div class="field full rules-editor-section">
+              <div class="rules-editor-head">
+                <div>
+                  <label>계산 기준</label>
+                  <p>제조 후·소분 후·개봉 후·해동 후 등 필요한 기준을 자유롭게 추가할 수 있습니다.</p>
+                </div>
+                <button id="addRuleBtn" class="ghost-button" type="button">기준 추가</button>
               </div>
-            </fieldset>
-
-            <fieldset class="rule-fieldset">
-              <legend>개봉 후</legend>
-              <div class="rule-grid">
-                <div class="field"><label for="openType">유형</label><select id="openType"></select></div>
-                <div class="field"><label for="openValue">값</label><input id="openValue" type="number" min="0"></div>
-                <div class="field full"><label for="openDisplay">화면 표기</label><input id="openDisplay" placeholder="예: 7d, 3M, 소비기한까지"></div>
-              </div>
-            </fieldset>
+              <div id="rulesEditor" class="rules-editor"></div>
+            </div>
 
             <div class="field full"><label for="tag">표기 방법</label><input id="tag"></div>
             <div class="field full"><label for="note">참고사항</label><textarea id="note" rows="4"></textarea></div>

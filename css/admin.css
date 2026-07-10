@@ -26,3 +26,9 @@
 #githubConnectionBadge.connected{background:#e9f7ef;color:#087443}
 #githubConnectionBadge.error{background:#fff0ef;color:#b42318}
 @media(max-width:600px){.github-settings-grid{grid-template-columns:1fr}.github-settings-grid .full{grid-column:auto}}
+
+.rules-editor-section{border-top:1px dashed var(--line);padding-top:14px}
+.rules-editor-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px}
+.rules-editor-head label{margin:0}.rules-editor-head p{margin:4px 0 0;color:var(--muted);font-size:12px;line-height:1.45}
+.rules-editor{display:grid;gap:10px}.rule-editor-row{border:1px solid var(--line);border-radius:16px;padding:12px;background:#fff}
+.rule-row-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.rule-row-head strong{font-size:13px}.rule-row-head .danger-button{padding:7px 10px;font-size:12px}

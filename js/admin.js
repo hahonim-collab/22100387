@@ -6,7 +6,7 @@ const SESSION_KEY="iqc_admin_ok_v2", ADMIN_ID="22100387", ADMIN_PW="22100387*";
 let products=[],selectedId=null,source="";
 const ruleTypes=[["none","자동 계산 없음"],["hour","시간(H)"],["day","일(d)"],["month","개월(M)"]];
 function options(){return ruleTypes.map(([v,t])=>`<option value="${v}">${t}</option>`).join("")}
-$("portionType").innerHTML=options();$("openType").innerHTML=options();
+
 function readGithubForm(){return{owner:$("githubOwner").value.trim(),repo:$("githubRepo").value.trim(),branch:$("githubBranch").value.trim()||"main",path:$("githubPath").value.trim()||"data/products.json"}}
 function fillGithubForm(){const s=getGithubSettings();$("githubOwner").value=s.owner;$("githubRepo").value=s.repo;$("githubBranch").value=s.branch;$("githubPath").value=s.path;$("githubToken").value=getGithubToken()}
 function setGithubBadge(text,state=""){const badge=$("githubConnectionBadge");badge.textContent=text;badge.className=`count-badge ${state}`.trim()}
@@ -19,16 +19,39 @@ function renderList(){
   const q=$("adminSearch").value.trim().toLowerCase();const rows=products.filter(p=>!q||(p.name+" "+p.category).toLowerCase().includes(q)).sort((a,b)=>a.order-b.order||a.name.localeCompare(b.name,"ko"));
   $("adminCount").textContent=`${rows.length}개`;$("adminList").innerHTML=rows.map(p=>`<button class="admin-list-item ${p.id===selectedId?"active":""}" type="button" data-id="${p.id}"><strong>${p.name}</strong><span>${p.category} · ${p.enabled?"표시":"숨김"} · 순서 ${p.order}</span></button>`).join("")||`<div class="empty">품목이 없습니다.</div>`;
 }
-function ruleToForm(prefix,rule){$(`${prefix}Type`).value=rule.type;$(`${prefix}Value`).value=rule.value||0;$(`${prefix}Display`).value=rule.display||"";}
-function formToRule(prefix){return{type:$(`${prefix}Type`).value,value:Number($(`${prefix}Value`).value)||0,display:$(`${prefix}Display`).value.trim()}}
+function createRule(label="",rule={type:"none",value:0,display:""}){
+  return {id:rule.id||`rule-${Date.now()}-${Math.random().toString(36).slice(2,7)}`,label,type:rule.type||"none",value:Number(rule.value)||0,display:rule.display||""};
+}
+function ruleRow(rule){
+  const el=document.createElement("div");el.className="rule-editor-row";el.dataset.ruleId=rule.id;
+  el.innerHTML=`<div class="rule-row-head"><strong>계산 기준</strong><button type="button" class="rule-remove danger-button">삭제</button></div>
+    <div class="rule-grid">
+      <div class="field full"><label>기준 이름</label><input class="rule-label" value="${rule.label.replaceAll('"','&quot;')}" placeholder="예: 제조 후, 소분 후, 개봉 후"></div>
+      <div class="field"><label>유형</label><select class="rule-type">${options()}</select></div>
+      <div class="field"><label>값</label><input class="rule-value" type="number" min="0" value="${rule.value||0}"></div>
+      <div class="field full"><label>화면 표기</label><input class="rule-display" value="${String(rule.display||"").replaceAll('"','&quot;')}" placeholder="예: 2d, 24H, 소비기한까지"></div>
+    </div>`;
+  el.querySelector(".rule-type").value=rule.type;
+  return el;
+}
+function renderRulesEditor(rules=[]){
+  const box=$("rulesEditor");box.innerHTML="";(rules.length?rules:[createRule("개봉 후")]).forEach(r=>box.appendChild(ruleRow(r)));
+}
+function collectRules(){
+  return [...document.querySelectorAll(".rule-editor-row")].map(row=>({
+    id:row.dataset.ruleId,label:row.querySelector(".rule-label").value.trim()||"기준",
+    type:row.querySelector(".rule-type").value,value:Number(row.querySelector(".rule-value").value)||0,
+    display:row.querySelector(".rule-display").value.trim()
+  }));
+}
 function clearForm(){
   selectedId=null;$("productForm").reset();$("productId").value="";$("enabled").checked=true;$("order").value=(Math.max(0,...products.map(p=>p.order))+1);
-  ruleToForm("portion",{type:"none",value:0,display:""});ruleToForm("open",{type:"none",value:0,display:""});
+  renderRulesEditor([createRule("개봉 후")]);
   $("editorTitle").textContent="새 품목 추가";$("editorHint").textContent="필수 항목을 입력한 뒤 저장하세요.";$("deleteBtn").disabled=true;renderList();
 }
 function edit(id){
   const p=products.find(x=>x.id===id);if(!p)return;selectedId=id;$("productId").value=p.id;$("name").value=p.name;$("category").value=p.category;$("storage").value=p.storage;
-  ruleToForm("portion",p.portionRule);ruleToForm("open",p.openRule);$("tag").value=p.tag;$("note").value=p.note;$("keywords").value=p.keywords.join(", ");
+  renderRulesEditor(p.rules);$("tag").value=p.tag;$("note").value=p.note;$("keywords").value=p.keywords.join(", ");
   $("order").value=p.order;$("enabled").checked=p.enabled;$("editorTitle").textContent="품목 편집";$("editorHint").textContent=p.id;$("deleteBtn").disabled=false;renderList();
 }
 function persist(msg){products=saveProducts(products);source="브라우저 저장 DB";renderAll();notify(msg);}
@@ -37,8 +60,10 @@ $("adminPw").addEventListener("keydown",e=>{if(e.key==="Enter")$("loginBtn").cli
 $("logoutBtn").addEventListener("click",()=>{sessionStorage.removeItem(SESSION_KEY);clearGithubToken();showApp();});
 $("adminSearch").addEventListener("input",renderList);$("adminList").addEventListener("click",e=>{const b=e.target.closest("[data-id]");if(b)edit(b.dataset.id);});
 $("addBtn").addEventListener("click",clearForm);$("cancelBtn").addEventListener("click",clearForm);
+$("addRuleBtn").addEventListener("click",()=>$("rulesEditor").appendChild(ruleRow(createRule(""))));
+$("rulesEditor").addEventListener("click",e=>{const btn=e.target.closest(".rule-remove");if(!btn)return;const rows=document.querySelectorAll(".rule-editor-row");if(rows.length===1){notify("계산 기준은 최소 한 개를 유지해 주세요.",true);return}btn.closest(".rule-editor-row").remove();});
 $("productForm").addEventListener("submit",async e=>{e.preventDefault();const id=selectedId||`prd-${Date.now()}`;
-  const item={id,name:$("name").value.trim(),category:$("category").value.trim(),storage:$("storage").value.trim(),portionRule:formToRule("portion"),openRule:formToRule("open"),tag:$("tag").value.trim(),note:$("note").value.trim(),keywords:$("keywords").value.split(",").map(v=>v.trim()).filter(Boolean),enabled:$("enabled").checked,order:Number($("order").value)||0};
+  const item={id,name:$("name").value.trim(),category:$("category").value.trim(),storage:$("storage").value.trim(),rules:collectRules(),tag:$("tag").value.trim(),note:$("note").value.trim(),keywords:$("keywords").value.split(",").map(v=>v.trim()).filter(Boolean),enabled:$("enabled").checked,order:Number($("order").value)||0};
   if(!item.name||!item.category){notify("품목명과 카테고리는 필수입니다.",true);return}
   const idx=products.findIndex(p=>p.id===id);if(idx>=0)products[idx]=item;else products.push(item);selectedId=id;persist("브라우저 임시 저장 완료");edit(id);
   const settings=readGithubForm(),token=$("githubToken").value.trim()||getGithubToken();
