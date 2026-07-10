@@ -110,7 +110,7 @@
   {
     "id": "prd-0006",
     "category": "커피",
-    "name": "콜드브루 커피 추출액 원액 보틀",
+    "name": "콜드브루 보틀",
     "storage": "냉장",
     "portionRule": {
       "type": "day",
