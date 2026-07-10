@@ -1411,7 +1411,7 @@
       "display": "1M"
     },
     "tag": "수기기입 또는 Price Tag",
-    "note": "개봉일~만료일",
+    "note": "개봉일~만료일\n소분은 선택사항으로, 필요량만큼 소분\nDID 보관 시 숫자 Tag + Price Tag",
     "keywords": [],
     "enabled": true,
     "order": 68
