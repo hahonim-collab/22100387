@@ -330,7 +330,7 @@
     "portionRule": {
       "type": "hour",
       "value": 48,
-      "display": "48H"
+      "display": "48h"
     },
     "openRule": {
       "type": "none",
