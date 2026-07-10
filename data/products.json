@@ -1165,7 +1165,7 @@
     "tag": "숫자 Tag + Price Tag",
     "note": "DID,2티스쿱",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 55
   },
   {
