@@ -2154,5 +2154,26 @@
     "keywords": [],
     "enabled": true,
     "order": 103
+  },
+  {
+    "id": "prd-1783701332182",
+    "category": "소스",
+    "name": "파인애플 소스",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "소분 후 3d"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": ""
+    },
+    "tag": "숫자Tag+price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 104
   }
 ]
