@@ -166,7 +166,12 @@
     },
     "tag": "숫자 Tag + Price Tag",
     "note": "블랙티, 민트티, 더블 블랙티 베이스",
-    "keywords": [],
+    "keywords": [
+      "블랙티",
+      "민트티",
+      "더블 블랙티 베이스",
+      "더블블랙티베이스"
+    ],
     "enabled": true,
     "order": 8
   },
