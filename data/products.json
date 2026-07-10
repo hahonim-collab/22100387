@@ -1432,7 +1432,7 @@
       "display": "-"
     },
     "tag": "",
-    "note": "티백 유통기한까지",
+    "note": "티백 유통기한까지\n개봉일~만료일\n소분은 선택사항으로, 필요량만큼 소분\nDID 보관 시 숫자 Tag + Price Tag",
     "keywords": [],
     "enabled": true,
     "order": 69
