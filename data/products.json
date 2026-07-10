@@ -2238,7 +2238,10 @@
     },
     "tag": "숫자 Tag + Price Tag / 원팩 숫자 Tag + Price Tag 또는 수기기입",
     "note": "드리즐 소분 후 2일, 원팩 14일에 유의",
-    "keywords": [],
+    "keywords": [
+      "씨솔트 드리즐",
+      "씨쏠트"
+    ],
     "enabled": true,
     "order": 108
   }
