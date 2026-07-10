@@ -2037,7 +2037,7 @@
     "portionRule": {
       "type": "hour",
       "value": 24,
-      "display": "24H"
+      "display": "제조 후 24H"
     },
     "openRule": {
       "type": "none",
