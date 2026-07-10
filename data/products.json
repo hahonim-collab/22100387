@@ -1419,7 +1419,7 @@
     "portionRule": {
       "type": "day",
       "value": 3,
-      "display": "소분 후 3d"
+      "display": "3d"
     },
     "openRule": {
       "type": "none",
