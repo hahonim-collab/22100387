@@ -2166,7 +2166,7 @@
     "portionRule": {
       "type": "day",
       "value": 7,
-      "display": "7D"
+      "display": "7d"
     },
     "openRule": {
       "type": "month",
