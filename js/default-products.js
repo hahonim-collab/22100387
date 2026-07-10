@@ -1,0 +1,2144 @@
+window.DEFAULT_PRODUCTS = [
+  {
+    "id": "prd-0001",
+    "category": "커피",
+    "name": "오늘의 커피 URN",
+    "storage": "타이머 / 71℃ 이상",
+    "portionRule": {
+      "type": "hour",
+      "value": 1,
+      "display": "1H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "기록 작성",
+    "note": "추출 후 1H",
+    "keywords": [],
+    "enabled": true,
+    "order": 1
+  },
+  {
+    "id": "prd-0002",
+    "category": "커피",
+    "name": "아이스 커피",
+    "storage": "실온",
+    "portionRule": {
+      "type": "hour",
+      "value": 4,
+      "display": "4H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "",
+    "note": "추출 후 4H. 매장 상황에 따라 선택 가능. 단, 교차보관 금지",
+    "keywords": [],
+    "enabled": true,
+    "order": 2
+  },
+  {
+    "id": "prd-0003",
+    "category": "커피",
+    "name": "아이스 커피",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 8,
+      "display": "8H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "",
+    "note": "추출 후 8H. 매장 상황에 따라 선택 가능. 단, 교차보관 금지",
+    "keywords": [],
+    "enabled": true,
+    "order": 3
+  },
+  {
+    "id": "prd-0004",
+    "category": "커피",
+    "name": "갈은 커피 드립/에스프레소칩용",
+    "storage": "실온",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "제조 후 24H",
+    "keywords": [],
+    "enabled": true,
+    "order": 4
+  },
+  {
+    "id": "prd-0005",
+    "category": "커피",
+    "name": "콜드브루 커피 추출액",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "리저브 공통",
+    "keywords": [],
+    "enabled": true,
+    "order": 5
+  },
+  {
+    "id": "prd-0006",
+    "category": "커피",
+    "name": "콜드브루 커피 추출액 원액 보틀",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "넥 Tag + Price Tag",
+    "note": "시그니처 더 블랙 콜드브루",
+    "keywords": [],
+    "enabled": true,
+    "order": 6
+  },
+  {
+    "id": "prd-0007",
+    "category": "커피",
+    "name": "원두 5lb / 1lb / 250g",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "수기 기입 또는 Price Tag",
+    "note": "개봉일~만료일",
+    "keywords": [],
+    "enabled": true,
+    "order": 7
+  },
+  {
+    "id": "prd-0008",
+    "category": "티",
+    "name": "티바나 더블 스트랭스 티",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "openRule": {
+      "type": "month",
+      "value": 3,
+      "display": "3M"
+    },
+    "tag": "수기 기입 또는 Price Tag",
+    "note": "개봉일~만료일",
+    "keywords": [],
+    "enabled": true,
+    "order": 8
+  },
+  {
+    "id": "prd-0009",
+    "category": "휘핑크림/제조베이스",
+    "name": "휘핑크림",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "제조 후 24H",
+    "keywords": [],
+    "enabled": true,
+    "order": 9
+  },
+  {
+    "id": "prd-0010",
+    "category": "휘핑크림/제조베이스",
+    "name": "Half & Half",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "제조 후 24H",
+    "keywords": [],
+    "enabled": true,
+    "order": 10
+  },
+  {
+    "id": "prd-0011",
+    "category": "휘핑크림/제조베이스",
+    "name": "딸기 리프레셔 믹스",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "제조 후 24H",
+    "keywords": [],
+    "enabled": true,
+    "order": 11
+  },
+  {
+    "id": "prd-0012",
+    "category": "휘핑크림/제조베이스",
+    "name": "클래식 밀크 티 베이스",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "제조 후 24H",
+    "keywords": [],
+    "enabled": true,
+    "order": 12
+  },
+  {
+    "id": "prd-0013",
+    "category": "휘핑크림/제조베이스",
+    "name": "클래식 밀크티 보틀",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 2,
+      "display": "2d"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "넥 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 13
+  },
+  {
+    "id": "prd-0014",
+    "category": "휘핑크림/제조베이스",
+    "name": "슈크림 휘핑",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "제조 후 24H",
+    "keywords": [],
+    "enabled": true,
+    "order": 14
+  },
+  {
+    "id": "prd-0015",
+    "category": "소스",
+    "name": "모카소스 초콜릿 드리즐 포함",
+    "storage": "실온",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "쿨링 시 냉장보관 가능, 마감 시 냉장보관",
+    "keywords": [],
+    "enabled": true,
+    "order": 15
+  },
+  {
+    "id": "prd-0016",
+    "category": "소스",
+    "name": "프라푸치노 로스트 믹스",
+    "storage": "실온",
+    "portionRule": {
+      "type": "hour",
+      "value": 48,
+      "display": "48H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 16
+  },
+  {
+    "id": "prd-0017",
+    "category": "소스",
+    "name": "시그니처 초콜릿 믹스",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 2,
+      "display": "2d"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "마감 시 냉장보관",
+    "keywords": [],
+    "enabled": true,
+    "order": 17
+  },
+  {
+    "id": "prd-0018",
+    "category": "소스",
+    "name": "시그니처 초콜릿 믹스 우유 포함",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 1,
+      "display": "당일"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 18
+  },
+  {
+    "id": "prd-0019",
+    "category": "폼",
+    "name": "얼그레이 폼",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "제조 후 24H",
+    "keywords": [],
+    "enabled": true,
+    "order": 19
+  },
+  {
+    "id": "prd-0020",
+    "category": "폼",
+    "name": "콜드 폼",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "제조 후 24H",
+    "keywords": [],
+    "enabled": true,
+    "order": 20
+  },
+  {
+    "id": "prd-0021",
+    "category": "폼",
+    "name": "인절미 크림",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "제조 후 24H / DID,스팀스푼",
+    "keywords": [],
+    "enabled": true,
+    "order": 21
+  },
+  {
+    "id": "prd-0022",
+    "category": "폼",
+    "name": "요거트 크림",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "제조 후 24H / DID,스팀스푼",
+    "keywords": [],
+    "enabled": true,
+    "order": 22
+  },
+  {
+    "id": "prd-0023",
+    "category": "폼",
+    "name": "슈 폼",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "제조 후 24H",
+    "keywords": [],
+    "enabled": true,
+    "order": 23
+  },
+  {
+    "id": "prd-0024",
+    "category": "소스/시럽",
+    "name": "25 화이트 초콜릿 맛 모카시럽",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 2,
+      "display": "2d"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 14,
+      "display": "14d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 24
+  },
+  {
+    "id": "prd-0025",
+    "category": "소스/시럽",
+    "name": "카라멜향 시럽 N",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 14,
+      "display": "14d"
+    },
+    "tag": "수기기입 또는 Price Tag",
+    "note": "드리즐용 키트 24시간",
+    "keywords": [],
+    "enabled": true,
+    "order": 25
+  },
+  {
+    "id": "prd-0026",
+    "category": "소스/시럽",
+    "name": "흑당 시럽 850ml",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 27,
+      "display": "27d"
+    },
+    "tag": "수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 26
+  },
+  {
+    "id": "prd-0027",
+    "category": "소스/시럽",
+    "name": "클래식 시럽 750ml CJ",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 27,
+      "display": "27d"
+    },
+    "tag": "수기기입 또는 Price Tag",
+    "note": "클래식/바닐라/스위트/헤이즐넛/토피넛 동일 기준",
+    "keywords": [],
+    "enabled": true,
+    "order": 27
+  },
+  {
+    "id": "prd-0028",
+    "category": "소스/시럽",
+    "name": "바닐라 시럽 750ml CJ",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 27,
+      "display": "27d"
+    },
+    "tag": "수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 28
+  },
+  {
+    "id": "prd-0029",
+    "category": "소스/시럽",
+    "name": "스위트 시럽 750ml CJ",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 27,
+      "display": "27d"
+    },
+    "tag": "수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 29
+  },
+  {
+    "id": "prd-0030",
+    "category": "소스/시럽",
+    "name": "헤이즐넛 시럽 750ml CJ",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 27,
+      "display": "27d"
+    },
+    "tag": "수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 30
+  },
+  {
+    "id": "prd-0031",
+    "category": "소스/시럽",
+    "name": "토피넛 시럽 750ml CJ",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 27,
+      "display": "27d"
+    },
+    "tag": "수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 31
+  },
+  {
+    "id": "prd-0032",
+    "category": "소스/시럽",
+    "name": "솔티드 카라멜 시럽 850ml",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 27,
+      "display": "27d"
+    },
+    "tag": "수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 32
+  },
+  {
+    "id": "prd-0033",
+    "category": "소스/시럽",
+    "name": "심플시럽 DT Bar / 휘핑제조용",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 27,
+      "display": "27d"
+    },
+    "tag": "수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 33
+  },
+  {
+    "id": "prd-0034",
+    "category": "소스/시럽",
+    "name": "베르가못 시럽 850ml",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 27,
+      "display": "27d"
+    },
+    "tag": "수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 34
+  },
+  {
+    "id": "prd-0035",
+    "category": "소스/시럽",
+    "name": "심플시럽 컨디바용",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 27,
+      "display": "27d"
+    },
+    "tag": "병하단 Price Tag",
+    "note": "고객 제공용",
+    "keywords": [],
+    "enabled": true,
+    "order": 35
+  },
+  {
+    "id": "prd-0036",
+    "category": "소스/시럽",
+    "name": "커피향시럽",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": "전량 소분"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 36
+  },
+  {
+    "id": "prd-0037",
+    "category": "소스/시럽",
+    "name": "크림향시럽 저당 포함",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": "전량 소분"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 37
+  },
+  {
+    "id": "prd-0038",
+    "category": "소스/시럽",
+    "name": "프렌치 바닐라 시럽 850ml",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 27,
+      "display": "27d"
+    },
+    "tag": "수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 38
+  },
+  {
+    "id": "prd-0039",
+    "category": "소스/시럽",
+    "name": "인절미 소스",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 14,
+      "display": "14d"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 39
+  },
+  {
+    "id": "prd-0040",
+    "category": "소스/시럽",
+    "name": "뉴 자몽 망고 소스",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 40
+  },
+  {
+    "id": "prd-0041",
+    "category": "소스/시럽",
+    "name": "스위트 바닐라 소스",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "개봉 후 잔량 냉장보관",
+    "keywords": [],
+    "enabled": true,
+    "order": 41
+  },
+  {
+    "id": "prd-0042",
+    "category": "소스/시럽",
+    "name": "자몽 망고 소스",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "개봉 후 잔량 냉장보관",
+    "keywords": [],
+    "enabled": true,
+    "order": 42
+  },
+  {
+    "id": "prd-0043",
+    "category": "토핑",
+    "name": "LIME / 25g 건라임",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 5,
+      "display": "5d"
+    },
+    "openRule": {
+      "type": "month",
+      "value": 1,
+      "display": "1M"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 43
+  },
+  {
+    "id": "prd-0044",
+    "category": "토핑",
+    "name": "동결 건조 딸기 슬라이스 로컬 50g",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "openRule": {
+      "type": "month",
+      "value": 3,
+      "display": "3M"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 44
+  },
+  {
+    "id": "prd-0045",
+    "category": "토핑",
+    "name": "망고 용과 토핑 25g",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "openRule": {
+      "type": "month",
+      "value": 3,
+      "display": "3M"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 45
+  },
+  {
+    "id": "prd-0046",
+    "category": "토핑",
+    "name": "New 프라푸치노 칩 자바칩",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "수기기입 또는 Price Tag",
+    "note": "부분소분, 실온 보관 시 당일 숫자 Tag",
+    "keywords": [],
+    "enabled": true,
+    "order": 46
+  },
+  {
+    "id": "prd-0047",
+    "category": "토핑",
+    "name": "초코 쉘",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 1,
+      "display": "1d"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 47
+  },
+  {
+    "id": "prd-0048",
+    "category": "토핑",
+    "name": "레인보우 미니구슬 100g",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "개봉 보관시 표시일까지",
+    "keywords": [],
+    "enabled": true,
+    "order": 48
+  },
+  {
+    "id": "prd-0049",
+    "category": "토핑",
+    "name": "초콜릿 땅콩 토핑 100g",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "openRule": {
+      "type": "month",
+      "value": 3,
+      "display": "3M"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 49
+  },
+  {
+    "id": "prd-0050",
+    "category": "토핑",
+    "name": "냉동 수박 다이스 100g",
+    "storage": "냉동",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "",
+    "note": "소비기한까지",
+    "keywords": [],
+    "enabled": true,
+    "order": 50
+  },
+  {
+    "id": "prd-0051",
+    "category": "토핑",
+    "name": "그래놀라 믹스",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "openRule": {
+      "type": "month",
+      "value": 3,
+      "display": "3M"
+    },
+    "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
+    "note": "소분-그래놀라 통",
+    "keywords": [],
+    "enabled": true,
+    "order": 51
+  },
+  {
+    "id": "prd-0052",
+    "category": "토핑",
+    "name": "팥앙금 찹살떡 30PC",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 52
+  },
+  {
+    "id": "prd-0053",
+    "category": "토핑",
+    "name": "팥앙금 찹살떡 반절",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
+    "note": "DID",
+    "keywords": [],
+    "enabled": true,
+    "order": 53
+  },
+  {
+    "id": "prd-0054",
+    "category": "토핑",
+    "name": "쿠키 토핑",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "개봉 후 밀봉보관 소비기한까지",
+    "keywords": [],
+    "enabled": true,
+    "order": 54
+  },
+  {
+    "id": "prd-0055",
+    "category": "토핑",
+    "name": "망고 별 토핑",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "DID,2티스쿱",
+    "keywords": [],
+    "enabled": true,
+    "order": 55
+  },
+  {
+    "id": "prd-0056",
+    "category": "토핑",
+    "name": "자몽 쌕",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "개봉 후 잔량 냉장보관/DID,1티스쿱",
+    "keywords": [],
+    "enabled": true,
+    "order": 56
+  },
+  {
+    "id": "prd-0057",
+    "category": "대체유",
+    "name": "연유소스",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 2,
+      "display": "2d"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 2,
+      "display": "2d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 57
+  },
+  {
+    "id": "prd-0058",
+    "category": "대체유",
+    "name": "스위트블랜디드",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 2,
+      "display": "2d"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 2,
+      "display": "2d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 58
+  },
+  {
+    "id": "prd-0059",
+    "category": "대체유",
+    "name": "두유",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 59
+  },
+  {
+    "id": "prd-0060",
+    "category": "대체유",
+    "name": "오트밀크 1,000ml",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 60
+  },
+  {
+    "id": "prd-0061",
+    "category": "유제품",
+    "name": "휘핑 크림 프릿츠골드",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 61
+  },
+  {
+    "id": "prd-0062",
+    "category": "유제품",
+    "name": "휘핑 크림 데빅 듀오 휩 1L",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 62
+  },
+  {
+    "id": "prd-0063",
+    "category": "유제품",
+    "name": "무지방 우유 1,000ml",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 2,
+      "display": "2d"
+    },
+    "tag": "냉장고 예시문구 부착대체",
+    "note": "개봉 후 다음날까지 사용합니다",
+    "keywords": [],
+    "enabled": true,
+    "order": 63
+  },
+  {
+    "id": "prd-0064",
+    "category": "유제품",
+    "name": "일반우유 1,000ml",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 2,
+      "display": "2d"
+    },
+    "tag": "냉장고 예시문구 부착대체",
+    "note": "개봉 후 다음날까지 사용합니다",
+    "keywords": [],
+    "enabled": true,
+    "order": 64
+  },
+  {
+    "id": "prd-0065",
+    "category": "유제품",
+    "name": "저지방우유 1,000ml",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 2,
+      "display": "2d"
+    },
+    "tag": "냉장고 예시문구 부착대체",
+    "note": "개봉 후 다음날까지 사용합니다",
+    "keywords": [],
+    "enabled": true,
+    "order": 65
+  },
+  {
+    "id": "prd-0066",
+    "category": "유제품",
+    "name": "바닐라 크림 베이스 1,000ml",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 1,
+      "display": "당일"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 66
+  },
+  {
+    "id": "prd-0067",
+    "category": "티백",
+    "name": "티바나 더블스트랭스 티",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "month",
+      "value": 3,
+      "display": "3M"
+    },
+    "tag": "수기기입 또는 Price Tag",
+    "note": "개봉일~만료일",
+    "keywords": [],
+    "enabled": true,
+    "order": 67
+  },
+  {
+    "id": "prd-0068",
+    "category": "티백",
+    "name": "제주 녹차 티백",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "openRule": {
+      "type": "month",
+      "value": 1,
+      "display": "1M"
+    },
+    "tag": "수기기입 또는 Price Tag",
+    "note": "개봉일~만료일",
+    "keywords": [],
+    "enabled": true,
+    "order": 68
+  },
+  {
+    "id": "prd-0069",
+    "category": "티백",
+    "name": "1CS티백",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": "-"
+    },
+    "tag": "",
+    "note": "티백유통기한까지",
+    "keywords": [],
+    "enabled": true,
+    "order": 69
+  },
+  {
+    "id": "prd-0070",
+    "category": "사인판",
+    "name": "초콜릿사인판",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소비기한까지"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "DID 소분가능, Price Tag",
+    "note": "원팩 반드시 보관",
+    "keywords": [],
+    "enabled": true,
+    "order": 70
+  },
+  {
+    "id": "prd-0071",
+    "category": "파우더",
+    "name": "모카 파우더 885g",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "openRule": {
+      "type": "month",
+      "value": 3,
+      "display": "3M"
+    },
+    "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 71
+  },
+  {
+    "id": "prd-0072",
+    "category": "파우더",
+    "name": "초콜릿 드링크 믹스 532g",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "openRule": {
+      "type": "month",
+      "value": 3,
+      "display": "3M"
+    },
+    "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
+    "note": "소분 X",
+    "keywords": [],
+    "enabled": true,
+    "order": 72
+  },
+  {
+    "id": "prd-0073",
+    "category": "파우더",
+    "name": "요거트 파우더 1,000g",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "openRule": {
+      "type": "month",
+      "value": 3,
+      "display": "3M"
+    },
+    "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 73
+  },
+  {
+    "id": "prd-0074",
+    "category": "파우더",
+    "name": "스노우 폼 파우더 300g",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "openRule": {
+      "type": "month",
+      "value": 3,
+      "display": "3M"
+    },
+    "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 74
+  },
+  {
+    "id": "prd-0075",
+    "category": "파우더",
+    "name": "유기농 100% 말차 100g",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "openRule": {
+      "type": "month",
+      "value": 3,
+      "display": "3M"
+    },
+    "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 75
+  },
+  {
+    "id": "prd-0076",
+    "category": "파우더",
+    "name": "우유 베이스 파우더",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "openRule": {
+      "type": "month",
+      "value": 3,
+      "display": "3M"
+    },
+    "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 76
+  },
+  {
+    "id": "prd-0077",
+    "category": "파우더",
+    "name": "콩고물 파우더",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "openRule": {
+      "type": "month",
+      "value": 3,
+      "display": "3M"
+    },
+    "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
+    "note": "바닥 숫자텍",
+    "keywords": [],
+    "enabled": true,
+    "order": 77
+  },
+  {
+    "id": "prd-0078",
+    "category": "베이스",
+    "name": "허니 자몽 소스 1.4kg",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 2,
+      "display": "2d"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 14,
+      "display": "14d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 78
+  },
+  {
+    "id": "prd-0079",
+    "category": "베이스",
+    "name": "딸기 베이스 1,000ml 냉장",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 2,
+      "display": "2d"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 79
+  },
+  {
+    "id": "prd-0080",
+    "category": "베이스",
+    "name": "복숭아 소스 500g 냉장",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 80
+  },
+  {
+    "id": "prd-0081",
+    "category": "베이스",
+    "name": "핑크 자몽 베이스 1,000ml 냉장",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 81
+  },
+  {
+    "id": "prd-0082",
+    "category": "베이스",
+    "name": "유자 진저 베이스 1,000ml 냉장",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 82
+  },
+  {
+    "id": "prd-0083",
+    "category": "베이스",
+    "name": "망고패션후르츠 블랜드 NEW",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 83
+  },
+  {
+    "id": "prd-0084",
+    "category": "베이스",
+    "name": "딸기 리프레셔 베이스 1L",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 84
+  },
+  {
+    "id": "prd-0085",
+    "category": "베이스",
+    "name": "라임 비버리지 베이스 1L",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 85
+  },
+  {
+    "id": "prd-0086",
+    "category": "베이스",
+    "name": "스타벅스 레모네이드 1L",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 86
+  },
+  {
+    "id": "prd-0087",
+    "category": "베이스",
+    "name": "체리 자두 베이스 1,000ml",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 87
+  },
+  {
+    "id": "prd-0088",
+    "category": "베이스",
+    "name": "피치 베이스 1,000ml",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 88
+  },
+  {
+    "id": "prd-0089",
+    "category": "베이스",
+    "name": "폼 베이스 1,000ml",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 2,
+      "display": "2d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 89
+  },
+  {
+    "id": "prd-0090",
+    "category": "베이스",
+    "name": "수박 베이스 1L",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 90
+  },
+  {
+    "id": "prd-0091",
+    "category": "베이스",
+    "name": "통팥 베이스",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "전량소분, 냉장 또는 실온보관, 마감시 반드시 냉장보관",
+    "keywords": [],
+    "enabled": true,
+    "order": 91
+  },
+  {
+    "id": "prd-0092",
+    "category": "베이스",
+    "name": "애플 망고 베이스",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "DID,5T스쿱",
+    "keywords": [],
+    "enabled": true,
+    "order": 92
+  },
+  {
+    "id": "prd-0093",
+    "category": "베이스",
+    "name": "키위 베이스 1,000ml 냉장",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 93
+  },
+  {
+    "id": "prd-0094",
+    "category": "베이스",
+    "name": "슈크림 말차 베이스",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "믹싱 피처",
+    "keywords": [],
+    "enabled": true,
+    "order": 94
+  },
+  {
+    "id": "prd-0095",
+    "category": "베이스",
+    "name": "오미자 베이스 냉장",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 95
+  },
+  {
+    "id": "prd-0096",
+    "category": "베이스",
+    "name": "블루 라임 베이스 1,000ml 냉장",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 96
+  },
+  {
+    "id": "prd-0097",
+    "category": "베이스",
+    "name": "쌀 베이스",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": "소분 X"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 97
+  },
+  {
+    "id": "prd-0098",
+    "category": "베이스",
+    "name": "막걸리 베이스",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "openRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "제조 후 24H",
+    "keywords": [],
+    "enabled": true,
+    "order": 98
+  },
+  {
+    "id": "prd-0099",
+    "category": "베이스",
+    "name": "코코넛 베이스",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "openRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "제조 후 24H",
+    "keywords": [],
+    "enabled": true,
+    "order": 99
+  },
+  {
+    "id": "prd-0100",
+    "category": "베이스",
+    "name": "코코넛 밀크",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "openRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "개봉 후 냉장보관",
+    "keywords": [],
+    "enabled": true,
+    "order": 100
+  },
+  {
+    "id": "prd-0101",
+    "category": "코어 원재료",
+    "name": "유제품",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "제조 후 24H",
+    "keywords": [],
+    "enabled": true,
+    "order": 101
+  },
+  {
+    "id": "prd-0102",
+    "category": "코어 원재료",
+    "name": "베이스",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "제조 후 24H",
+    "keywords": [],
+    "enabled": true,
+    "order": 102
+  }
+];

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#006241">
+  <title>내부품질기한 DB 관리</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/admin.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div>
+      <h1>DB 관리</h1>
+      <p>품목 추가·수정·삭제 및 JSON 백업</p>
+    </div>
+    <a class="header-link" href="./index.html">계산기로 돌아가기</a>
+  </div>
+</header>
+
+<main class="container">
+  <section id="loginPanel" class="panel login-panel">
+    <h2>관리자 로그인</h2>
+    <p class="muted"></p>
+    <div class="login-grid">
+      <div class="field"><label for="adminId">아이디</label><input id="adminId" value="22100387" autocomplete="username"></div>
+      <div class="field"><label for="adminPw">비밀번호</label><input id="adminPw" type="password" autocomplete="current-password"></div>
+    </div>
+    <button id="loginBtn" class="primary-button" type="button">로그인</button>
+    <p id="loginMessage" class="form-message"></p>
+  </section>
+
+  <div id="adminApp" hidden>
+    <section class="panel toolbar-panel">
+      <div class="toolbar">
+        <button id="addBtn" class="primary-button" type="button">새 품목 추가</button>
+        <button id="exportBtn" class="ghost-button" type="button">JSON 내보내기</button>
+        <label class="ghost-button file-button">JSON 가져오기<input id="importInput" type="file" accept=".json,application/json"></label>
+        <button id="resetBtn" class="danger-button" type="button">기본 DB로 초기화</button>
+        <button id="logoutBtn" class="ghost-button" type="button">로그아웃</button>
+      </div>
+      <div class="admin-status">
+        <span id="adminDbStatus"></span>
+        <span id="saveMessage"></span>
+      </div>
+    </section>
+
+    <section class="admin-layout">
+      <aside class="panel admin-list-panel">
+        <div class="section-heading compact">
+          <h2>품목 목록</h2>
+          <span id="adminCount" class="count-badge"></span>
+        </div>
+        <input id="adminSearch" type="search" placeholder="품목명 또는 카테고리 검색">
+        <div id="adminList" class="admin-list"></div>
+      </aside>
+
+      <section class="panel editor-panel">
+        <div class="section-heading">
+          <div>
+            <h2 id="editorTitle">품목 편집</h2>
+            <p id="editorHint">목록에서 품목을 선택하거나 새 품목을 추가하세요.</p>
+          </div>
+          <button id="deleteBtn" class="danger-button" type="button" disabled>삭제</button>
+        </div>
+
+        <form id="productForm">
+          <input id="productId" type="hidden">
+          <div class="editor-grid">
+            <div class="field full"><label for="name">품목명 *</label><input id="name" required></div>
+            <div class="field"><label for="category">카테고리 *</label><input id="category" list="categoryOptions" required><datalist id="categoryOptions"></datalist></div>
+            <div class="field"><label for="storage">보관 방법</label><input id="storage"></div>
+
+            <fieldset class="rule-fieldset">
+              <legend>소분·제조 후</legend>
+              <div class="rule-grid">
+                <div class="field"><label for="portionType">유형</label><select id="portionType"></select></div>
+                <div class="field"><label for="portionValue">값</label><input id="portionValue" type="number" min="0"></div>
+                <div class="field full"><label for="portionDisplay">화면 표기</label><input id="portionDisplay" placeholder="예: 2d, 24H, 소분 X"></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="rule-fieldset">
+              <legend>개봉 후</legend>
+              <div class="rule-grid">
+                <div class="field"><label for="openType">유형</label><select id="openType"></select></div>
+                <div class="field"><label for="openValue">값</label><input id="openValue" type="number" min="0"></div>
+                <div class="field full"><label for="openDisplay">화면 표기</label><input id="openDisplay" placeholder="예: 7d, 3M, 소비기한까지"></div>
+              </div>
+            </fieldset>
+
+            <div class="field full"><label for="tag">표기 방법</label><input id="tag"></div>
+            <div class="field full"><label for="note">참고사항</label><textarea id="note" rows="4"></textarea></div>
+            <div class="field full"><label for="keywords">검색 키워드</label><input id="keywords" placeholder="쉼표로 구분"></div>
+            <div class="field"><label for="order">정렬 순서</label><input id="order" type="number" min="0"></div>
+            <label class="check-field"><input id="enabled" type="checkbox" checked> 계산기 화면에 표시</label>
+          </div>
+
+          <div class="form-actions">
+            <button class="primary-button" type="submit">저장</button>
+            <button id="cancelBtn" class="ghost-button" type="button">입력 취소</button>
+          </div>
+        </form>
+      </section>
+    </section>
+  </div>
+</main>
+
+<script src="./js/default-products.js"></script>
+<script src="./js/db.js"></script>
+<script src="./js/admin.js"></script>
+</body>
+</html>

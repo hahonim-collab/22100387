@@ -1,0 +1,37 @@
+:root{
+  --green:#006241;--green-dark:#004c32;--cream:#f6f2e9;--card:#fffdf8;
+  --line:#e3dccf;--text:#1f2933;--muted:#68717d;--soft:#edf7f2;
+  --danger:#b42318;--shadow:0 8px 24px rgba(57,42,20,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,var(--cream),#f2efe9);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",Arial,sans-serif;color:var(--text)}
+button,input,select,textarea{font:inherit}
+button,a{touch-action:manipulation}
+.site-header{background:linear-gradient(135deg,var(--green),var(--green-dark));color:#fff;padding:19px 16px 24px;border-radius:0 0 28px 28px;box-shadow:0 8px 24px rgba(0,98,65,.22)}
+.header-inner{max-width:1000px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.site-header h1{font-size:23px;margin:0 0 5px;letter-spacing:-.6px}
+.site-header p{font-size:13px;margin:0;opacity:.9;line-height:1.45}
+.header-link{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:9px 13px;font-size:13px;font-weight:800;white-space:nowrap}
+.container{max-width:1000px;margin:0 auto;padding:14px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:23px;padding:16px;margin-bottom:13px;box-shadow:var(--shadow)}
+.section-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:13px}
+.section-heading.compact{align-items:center}
+.section-heading h2,.panel h2{font-size:17px;margin:0;letter-spacing:-.35px}
+.section-heading p,.muted{font-size:12px;color:var(--muted);margin:4px 0 0;line-height:1.5}
+label{display:block;font-size:13px;font-weight:850;margin-bottom:7px}
+input,select,textarea{width:100%;border:1px solid var(--line);border-radius:14px;padding:11px 12px;background:#fff;color:var(--text);outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(0,98,65,.11)}
+textarea{resize:vertical}
+.primary-button,.ghost-button,.danger-button,.icon-button{border-radius:13px;padding:10px 13px;font-weight:850;cursor:pointer}
+.primary-button{border:1px solid var(--green);background:var(--green);color:#fff}
+.ghost-button{border:1px solid var(--line);background:#fff;color:var(--text)}
+.danger-button{border:1px solid #f0b7b2;background:#fff4f3;color:var(--danger)}
+button:disabled{opacity:.45;cursor:not-allowed}
+.count-badge{display:inline-flex;align-items:center;min-height:28px;padding:4px 10px;border-radius:999px;background:var(--soft);color:var(--green);font-size:12px;font-weight:900}
+.field{min-width:0}
+.form-message{font-size:13px;min-height:20px;color:var(--danger)}
+.notice{font-size:13px;line-height:1.55;color:var(--muted)}
+.notice strong{color:var(--text)}
+.notice p{margin:6px 0 0}
+@media(max-width:600px){.header-inner{align-items:flex-start}.site-header h1{font-size:21px}.header-link{padding:8px 10px}.container{padding:11px}.panel{border-radius:20px;padding:14px}}
