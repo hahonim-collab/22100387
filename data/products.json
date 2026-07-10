@@ -278,7 +278,7 @@
       "display": ""
     },
     "tag": "넥 Tag + Price Tag",
-    "note": "",
+    "note": "제조 후 2d",
     "keywords": [],
     "enabled": true,
     "order": 13
@@ -2208,7 +2208,7 @@
     "portionRule": {
       "type": "day",
       "value": 3,
-      "display": "3d"
+      "display": "3D"
     },
     "openRule": {
       "type": "none",
