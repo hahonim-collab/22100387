@@ -2220,5 +2220,26 @@
     "keywords": [],
     "enabled": true,
     "order": 107
+  },
+  {
+    "id": "prd-1783701673738",
+    "category": "소스",
+    "name": "씨솔트 카라멜 베이스",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 2,
+      "display": "2d"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 14,
+      "display": "14d"
+    },
+    "tag": "숫자 Tag + Price Tag / 원팩 숫자 Tag + Price Tag 또는 수기기입",
+    "note": "드리즐 소분 후 2일, 원팩 14일에 유의",
+    "keywords": [],
+    "enabled": true,
+    "order": 108
   }
 ]
