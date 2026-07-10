@@ -1211,27 +1211,6 @@
     "order": 57
   },
   {
-    "id": "prd-0058",
-    "category": "대체유",
-    "name": "스위트블랜디드",
-    "storage": "실온",
-    "portionRule": {
-      "type": "day",
-      "value": 2,
-      "display": "2d"
-    },
-    "openRule": {
-      "type": "day",
-      "value": 2,
-      "display": "2d"
-    },
-    "tag": "숫자 Tag + Price Tag",
-    "note": "",
-    "keywords": [],
-    "enabled": true,
-    "order": 58
-  },
-  {
     "id": "prd-0059",
     "category": "대체유",
     "name": "두유",
