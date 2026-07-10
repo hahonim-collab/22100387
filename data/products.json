@@ -2133,5 +2133,26 @@
     "keywords": [],
     "enabled": false,
     "order": 102
+  },
+  {
+    "id": "prd-1783701211477",
+    "category": "토핑",
+    "name": "피치망고용과 토핑",
+    "storage": "실온",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "소분 후 3d"
+    },
+    "openRule": {
+      "type": "month",
+      "value": 3,
+      "display": "3M"
+    },
+    "tag": "",
+    "note": "DID, 1TS",
+    "keywords": [],
+    "enabled": true,
+    "order": 103
   }
 ]
