@@ -2279,7 +2279,9 @@
     },
     "tag": "숫자 Tag + Price Tag",
     "note": "DID, 2TS",
-    "keywords": [],
+    "keywords": [
+      "레몬코코젤리"
+    ],
     "enabled": true,
     "order": 109
   },
