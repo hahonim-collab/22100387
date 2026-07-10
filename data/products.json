@@ -64,8 +64,8 @@
   },
   {
     "id": "prd-0004",
-    "name": "갈은 커피 드립/에스프레소칩용",
     "category": "커피",
+    "name": "갈은 커피 드립/에스프레소칩용",
     "storage": "실온",
     "portionRule": {
       "type": "hour",
@@ -175,7 +175,7 @@
     "portionRule": {
       "type": "hour",
       "value": 24,
-      "display": "24H"
+      "display": "24h"
     },
     "openRule": {
       "type": "none",
@@ -183,7 +183,7 @@
       "display": ""
     },
     "tag": "숫자 Tag + Price Tag",
-    "note": "제조 후 24H",
+    "note": "제조 후 24h",
     "keywords": [],
     "enabled": true,
     "order": 9
