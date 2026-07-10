@@ -1248,7 +1248,11 @@
     },
     "tag": "숫자 Tag + Price Tag",
     "note": "",
-    "keywords": [],
+    "keywords": [
+      "휘핑 크림",
+      "프릿츠",
+      "프릿츠 골드"
+    ],
     "enabled": true,
     "order": 61
   },
