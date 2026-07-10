@@ -1653,8 +1653,8 @@
   },
   {
     "id": "prd-0081",
-    "name": "핑크 자몽 베이스 1,000ml 냉장",
     "category": "베이스",
+    "name": "핑크 자몽 베이스 1,000ml 냉장",
     "storage": "냉장",
     "portionRule": {
       "type": "none",
