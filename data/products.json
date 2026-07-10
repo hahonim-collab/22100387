@@ -785,7 +785,7 @@
       "display": "전량 소분"
     },
     "tag": "숫자 Tag + Price Tag",
-    "note": "",
+    "note": "크림베이스, 라이트 크림베이스",
     "keywords": [
       "크림베이스",
       "크림 베이스"
@@ -1371,8 +1371,8 @@
   },
   {
     "id": "prd-0067",
-    "name": "티바나 더블스트랭스 티",
     "category": "티백",
+    "name": "티바나 더블스트랭스 티",
     "storage": "실온",
     "portionRule": {
       "type": "none",
