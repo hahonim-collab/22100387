@@ -2199,5 +2199,26 @@
     "keywords": [],
     "enabled": true,
     "order": 106
+  },
+  {
+    "id": "prd-1783701611549",
+    "category": "폼",
+    "name": "쏠티 클라우드 폼",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24h"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "믹싱피처",
+    "keywords": [],
+    "enabled": true,
+    "order": 107
   }
 ]
