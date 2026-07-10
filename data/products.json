@@ -2053,7 +2053,7 @@
   {
     "id": "prd-0099",
     "category": "베이스",
-    "name": "코코넛 베이스 믹스",
+    "name": "코코넛 믹스",
     "storage": "냉장",
     "portionRule": {
       "type": "none",
@@ -2067,7 +2067,10 @@
     },
     "tag": "숫자 Tag + Price Tag",
     "note": "제조 후 24H",
-    "keywords": [],
+    "keywords": [
+      "코코넛베이스",
+      "코코넛 베이스"
+    ],
     "enabled": true,
     "order": 99
   },
