@@ -1144,7 +1144,7 @@
     "tag": "숫자 Tag + Price Tag",
     "note": "개봉 후 밀봉보관 소비기한까지",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 54
   },
   {
