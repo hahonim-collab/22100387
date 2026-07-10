@@ -2237,7 +2237,7 @@
       "display": "14d"
     },
     "tag": "숫자 Tag + Price Tag / 원팩 숫자 Tag + Price Tag 또는 수기기입",
-    "note": "드리즐 소분 후 2일, 원팩 14일에 유의",
+    "note": "드리즐 소분시 2일, 원팩 14일",
     "keywords": [
       "씨솔트 드리즐",
       "씨쏠트"
@@ -2269,7 +2269,7 @@
   {
     "id": "prd-1783701800944",
     "category": "소스/시럽",
-    "name": "제로 클래식 시럽 750ml",
+    "name": "제로 클래식 시럽",
     "storage": "실온",
     "portionRule": {
       "type": "none",
