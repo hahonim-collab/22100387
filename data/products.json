@@ -2178,5 +2178,26 @@
     "keywords": [],
     "enabled": true,
     "order": 105
+  },
+  {
+    "id": "prd-1783701580658",
+    "category": "토핑",
+    "name": "알로에 토핑",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 3,
+      "display": "3D"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "DID, 2TS",
+    "keywords": [],
+    "enabled": true,
+    "order": 106
   }
 ]
