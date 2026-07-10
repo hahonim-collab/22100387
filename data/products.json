@@ -7,7 +7,7 @@
     "portionRule": {
       "type": "hour",
       "value": 1,
-      "display": "1H"
+      "display": "1h"
     },
     "openRule": {
       "type": "none",
@@ -15,7 +15,7 @@
       "display": ""
     },
     "tag": "타이머",
-    "note": "추출 후 1H",
+    "note": "추출 후 1h",
     "keywords": [],
     "enabled": true,
     "order": 1
