@@ -1970,7 +1970,7 @@
     "tag": "숫자 Tag + Price Tag",
     "note": "믹싱 피처",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 94
   },
   {
