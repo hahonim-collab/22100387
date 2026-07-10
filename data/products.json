@@ -28,7 +28,7 @@
     "portionRule": {
       "type": "hour",
       "value": 4,
-      "display": "4H"
+      "display": "4h"
     },
     "openRule": {
       "type": "none",
@@ -36,7 +36,7 @@
       "display": ""
     },
     "tag": "",
-    "note": "추출 후 4H. 매장 상황에 따라 선택 가능. 단, 교차보관 금지",
+    "note": "추출 후 4h. 매장 상황에 따라 선택 가능. 단, 교차보관 금지",
     "keywords": [],
     "enabled": true,
     "order": 2
