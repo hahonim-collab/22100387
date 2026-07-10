@@ -2168,9 +2168,9 @@
     "openRule": {
       "type": "day",
       "value": 7,
-      "display": ""
+      "display": "7d"
     },
-    "tag": "숫자 Tag + Price Tag",
+    "tag": "숫자 Tag + Price Tag / 원팩 수기기입 가능",
     "note": "",
     "keywords": [],
     "enabled": true,
