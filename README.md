@@ -50,3 +50,10 @@ GitHub Pages에 업로드하면 `data/products.json`을 직접 불러옵니다.
 - 빠른 날짜 보기 기준일을 달력에서 직접 선택할 수 있습니다.
 - 선택한 기준일을 당일 포함 방식으로 계산합니다.
 - 오늘로 초기화 버튼이 빠른 날짜 기준일과 계산 기준일을 함께 초기화합니다.
+
+
+## GitHub 자동 수정 관리자
+- 관리자 페이지에서 GitHub 저장소, 브랜치, DB 경로, Fine-grained token을 설정합니다.
+- 품목 저장/삭제 시 `data/products.json`을 GitHub에 자동 커밋합니다.
+- 토큰 권한은 해당 저장소의 `Contents: Read and write`만 부여하세요.
+- 토큰은 현재 관리자 탭의 `sessionStorage`에만 저장되며 로그아웃 시 삭제됩니다.
