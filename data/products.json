@@ -2244,5 +2244,26 @@
     ],
     "enabled": true,
     "order": 108
+  },
+  {
+    "id": "prd-1783701780659",
+    "category": "토핑",
+    "name": "레몬 코코 젤리",
+    "storage": "냉장",
+    "portionRule": {
+      "type": "day",
+      "value": 2,
+      "display": "2d"
+    },
+    "openRule": {
+      "type": "day",
+      "value": 7,
+      "display": "7d"
+    },
+    "tag": "숫자 Tag + Price Tag",
+    "note": "DID, 2TS",
+    "keywords": [],
+    "enabled": true,
+    "order": 109
   }
 ]
