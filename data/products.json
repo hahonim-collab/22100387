@@ -1659,7 +1659,7 @@
     "portionRule": {
       "type": "none",
       "value": 0,
-      "display": "소분 X"
+      "display": ""
     },
     "openRule": {
       "type": "day",
@@ -1667,7 +1667,7 @@
       "display": "7d"
     },
     "tag": "숫자 Tag + Price Tag",
-    "note": "",
+    "note": "소분 X",
     "keywords": [],
     "enabled": true,
     "order": 81
@@ -1680,7 +1680,7 @@
     "portionRule": {
       "type": "none",
       "value": 0,
-      "display": "소분 X"
+      "display": ""
     },
     "openRule": {
       "type": "day",
@@ -1688,7 +1688,7 @@
       "display": "7d"
     },
     "tag": "숫자 Tag + Price Tag",
-    "note": "",
+    "note": "소분 X",
     "keywords": [],
     "enabled": true,
     "order": 82
@@ -2014,17 +2014,17 @@
     "name": "막걸리 베이스",
     "storage": "냉장",
     "portionRule": {
-      "type": "hour",
-      "value": 24,
-      "display": "24H"
-    },
-    "openRule": {
       "type": "none",
       "value": 0,
       "display": ""
     },
+    "openRule": {
+      "type": "hour",
+      "value": 24,
+      "display": "24H"
+    },
     "tag": "숫자 Tag + Price Tag",
-    "note": "",
+    "note": "제조 후 24H",
     "keywords": [],
     "enabled": true,
     "order": 98
