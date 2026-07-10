@@ -745,7 +745,7 @@
   {
     "id": "prd-0036",
     "category": "소스/시럽",
-    "name": "커피향시럽",
+    "name": "커피향시럽 저당 포함",
     "storage": "실온",
     "portionRule": {
       "type": "day",
@@ -759,7 +759,10 @@
     },
     "tag": "숫자 Tag + Price Tag",
     "note": "",
-    "keywords": [],
+    "keywords": [
+      "커피베이스",
+      "커피 베이스"
+    ],
     "enabled": true,
     "order": 36
   },
