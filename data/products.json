@@ -1401,13 +1401,13 @@
   },
   {
     "id": "prd-0068",
-    "category": "티백",
     "name": "제주 녹차 티백",
+    "category": "티백",
     "storage": "실온",
     "portionRule": {
-      "type": "day",
-      "value": 3,
-      "display": "3d"
+      "type": "none",
+      "value": 0,
+      "display": ""
     },
     "openRule": {
       "type": "month",
@@ -1415,7 +1415,7 @@
       "display": "1M"
     },
     "tag": "수기기입 또는 Price Tag",
-    "note": "개봉일~만료일\n소분은 선택사항으로, 필요량만큼 소분\nDID 보관 시 숫자 Tag + Price Tag",
+    "note": "개봉일~만료일/소분은 선택사항으로, 필요량만큼 소분/DID 소분 시 3d 숫자 Tag + Price Tag",
     "keywords": [],
     "enabled": true,
     "order": 68
