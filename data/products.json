@@ -1401,8 +1401,8 @@
   },
   {
     "id": "prd-0068",
-    "name": "제주 녹차 티백",
     "category": "티백",
+    "name": "제주 녹차 티백",
     "storage": "실온",
     "portionRule": {
       "type": "none",
