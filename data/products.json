@@ -2149,7 +2149,7 @@
       "value": 3,
       "display": "3M"
     },
-    "tag": "",
+    "tag": "숫자 Tag + Price Tag / 원팩 숫자 Tag + Price Tag 또는 수기 기입",
     "note": "DID, 1TS",
     "keywords": [],
     "enabled": true,
