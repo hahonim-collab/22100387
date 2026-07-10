@@ -65,7 +65,7 @@
   {
     "id": "prd-0004",
     "category": "커피",
-    "name": "갈은 커피 드립/에스프레소칩용",
+    "name": "갈은 커피 (드립/에스프레소칩용)",
     "storage": "실온",
     "portionRule": {
       "type": "hour",
@@ -79,7 +79,10 @@
     },
     "tag": "숫자 Tag + Price Tag",
     "note": "제조 후 24h",
-    "keywords": [],
+    "keywords": [
+      "분쇄 원두",
+      "분쇄원두"
+    ],
     "enabled": true,
     "order": 4
   },
@@ -1393,9 +1396,9 @@
     "name": "제주 녹차 티백",
     "storage": "실온",
     "portionRule": {
-      "type": "day",
-      "value": 3,
-      "display": "3d"
+      "type": "none",
+      "value": 0,
+      "display": ""
     },
     "openRule": {
       "type": "month",
@@ -1403,7 +1406,7 @@
       "display": "1M"
     },
     "tag": "수기기입 또는 Price Tag",
-    "note": "개봉일~만료일\n소분은 선택사항으로, 필요량만큼 소분\nDID 보관 시 숫자 Tag + Price Tag",
+    "note": "개봉일~만료일",
     "keywords": [],
     "enabled": true,
     "order": 68
@@ -1424,7 +1427,7 @@
       "display": "-"
     },
     "tag": "",
-    "note": "티백 유통기한까지\n소분은 선택사항으로, 필요량만큼 소분\nDID 보관 시 숫자 Tag + Price Tag",
+    "note": "티백 유통기한까지",
     "keywords": [],
     "enabled": true,
     "order": 69
