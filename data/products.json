@@ -1349,7 +1349,7 @@
     "openRule": {
       "type": "day",
       "value": 2,
-      "display": "당일"
+      "display": "2d"
     },
     "tag": "냉장고 예시문구 부착대체",
     "note": "개봉 후 다음 날까지 사용합니다",
