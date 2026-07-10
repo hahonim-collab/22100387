@@ -2265,5 +2265,26 @@
     "keywords": [],
     "enabled": true,
     "order": 109
+  },
+  {
+    "id": "prd-1783701800944",
+    "category": "소스/시럽",
+    "name": "제로 클래식 시럽",
+    "storage": "실온",
+    "portionRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
+    },
+    "tag": "",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 110
   }
 ]
