@@ -2014,14 +2014,14 @@
     "name": "막걸리 베이스",
     "storage": "냉장",
     "portionRule": {
-      "type": "none",
-      "value": 0,
-      "display": ""
-    },
-    "openRule": {
       "type": "hour",
       "value": 24,
       "display": "24H"
+    },
+    "openRule": {
+      "type": "none",
+      "value": 0,
+      "display": ""
     },
     "tag": "숫자 Tag + Price Tag",
     "note": "제조 후 24H",
