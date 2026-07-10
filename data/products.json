@@ -235,8 +235,8 @@
   },
   {
     "id": "prd-0012",
-    "name": "클래식 밀크티 베이스",
     "category": "휘핑크림/제조베이스",
+    "name": "클래식 밀크티 베이스",
     "storage": "냉장",
     "portionRule": {
       "type": "hour",
@@ -283,7 +283,7 @@
     "portionRule": {
       "type": "hour",
       "value": 24,
-      "display": "24H"
+      "display": "24h"
     },
     "openRule": {
       "type": "none",
