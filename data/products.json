@@ -1170,8 +1170,8 @@
   },
   {
     "id": "prd-0057",
-    "name": "연유 (스위트블렌디드)",
     "category": "소스",
+    "name": "연유 (스위트블렌디드)",
     "storage": "실온",
     "portionRule": {
       "type": "day",
