@@ -1722,7 +1722,7 @@
     "portionRule": {
       "type": "none",
       "value": 0,
-      "display": "소분 X"
+      "display": ""
     },
     "openRule": {
       "type": "day",
@@ -1743,7 +1743,7 @@
     "portionRule": {
       "type": "none",
       "value": 0,
-      "display": "소분 X"
+      "display": ""
     },
     "openRule": {
       "type": "day",
