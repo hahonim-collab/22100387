@@ -1426,9 +1426,9 @@
     "name": "1CS티백",
     "storage": "실온",
     "portionRule": {
-      "type": "none",
-      "value": 0,
-      "display": ""
+      "type": "day",
+      "value": 3,
+      "display": "소분 후 3d"
     },
     "openRule": {
       "type": "none",
