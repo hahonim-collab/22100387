@@ -833,27 +833,6 @@
     "order": 39
   },
   {
-    "id": "prd-0040",
-    "category": "소스/시럽",
-    "name": "뉴 자몽 망고 소스",
-    "storage": "냉장",
-    "portionRule": {
-      "type": "day",
-      "value": 7,
-      "display": "7d"
-    },
-    "openRule": {
-      "type": "none",
-      "value": 0,
-      "display": ""
-    },
-    "tag": "숫자 Tag + Price Tag",
-    "note": "",
-    "keywords": [],
-    "enabled": true,
-    "order": 40
-  },
-  {
     "id": "prd-0041",
     "category": "소스/시럽",
     "name": "스위트 바닐라 소스",
