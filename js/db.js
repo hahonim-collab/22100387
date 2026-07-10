@@ -34,19 +34,35 @@ async function loadJsonFile(){
   if(!response.ok)throw new Error(`HTTP ${response.status}`);
   return normalizeProducts(await response.json());
 }
-async function loadProducts(){
+async function loadProducts(options={}){
+  const preferRemote=options.preferRemote!==false;
+
+  if(preferRemote){
+    try{
+      const products=await loadJsonFile();
+      return {products,source:"GitHub products.json"};
+    }catch(e){
+      console.warn("products.json 로드 실패",e);
+    }
+  }
+
   const saved=localStorage.getItem(STORAGE_KEY);
   if(saved){
-    try{return {products:normalizeProducts(JSON.parse(saved)),source:"브라우저 저장 DB"}}
+    try{return {products:normalizeProducts(JSON.parse(saved)),source:"브라우저 임시 DB"}}
     catch(e){console.warn("저장 DB 파싱 실패",e)}
   }
-  try{
-    const products=await loadJsonFile();
-    return {products,source:"products.json"};
-  }catch(e){
-    const fallback=normalizeProducts(window.DEFAULT_PRODUCTS||[]);
-    return {products:fallback,source:"내장 기본 DB"};
+
+  if(!preferRemote){
+    try{
+      const products=await loadJsonFile();
+      return {products,source:"GitHub products.json"};
+    }catch(e){
+      console.warn("products.json 로드 실패",e);
+    }
   }
+
+  const fallback=normalizeProducts(window.DEFAULT_PRODUCTS||[]);
+  return {products:fallback,source:"내장 기본 DB"};
 }
 function saveProducts(products){
   const normalized=normalizeProducts(products);

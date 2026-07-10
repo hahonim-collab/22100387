@@ -72,8 +72,8 @@ function calc(){
   if(!exp){$("expireDate").textContent="자동 계산 불가";$("expireMeta").textContent=`선택 기준: ${ruleLabel(rule)} · 날짜 계산이 없는 기준입니다.`;return;}
   const y=exp.getFullYear(),m=String(exp.getMonth()+1).padStart(2,"0"),d=String(exp.getDate()).padStart(2,"0");
   const time=rule.type==="hour"?` ${String(exp.getHours()).padStart(2,"0")}:${String(exp.getMinutes()).padStart(2,"0")}`:"";
-  $("expireDate").textContent=`${y}-${m}-${d}${time}`;
-  $("expireMeta").textContent=`${dayNames[exp.getDay()]} · ${$("mode").value==="portion"?"소분·제조일":"개봉일"} 기준 ${ruleLabel(rule)} · ${rule.type==="hour"?"선택 시각 기준":"당일 포함"}`;
+  $("expireDate").textContent=`${y}-${m}-${d}${time} ${dayNames[exp.getDay()]}`;
+  $("expireMeta").textContent=`${$("mode").value==="portion"?"소분·제조일":"개봉일"} 기준 ${ruleLabel(rule)}`;
 }
 renderQuick();
 $("quickGrid").addEventListener("click",e=>{const b=e.target.closest("[data-index]");if(!b)return;const d=quickDate(quickRules[+b.dataset.index]);$("baseDate").value=localDateValue(d);document.querySelectorAll(".quick-date").forEach(x=>x.classList.toggle("active",x===b));calc();});
