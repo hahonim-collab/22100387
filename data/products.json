@@ -1323,7 +1323,7 @@
     "portionRule": {
       "type": "none",
       "value": 0,
-      "display": "소분 X"
+      "display": ""
     },
     "openRule": {
       "type": "day",
@@ -1352,7 +1352,7 @@
       "display": "당일"
     },
     "tag": "냉장고 예시문구 부착대체",
-    "note": "",
+    "note": "개봉 후 다음 날까지 사용합니다",
     "keywords": [],
     "enabled": true,
     "order": 66
