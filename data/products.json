@@ -1338,8 +1338,8 @@
   },
   {
     "id": "prd-0065",
-    "name": "저지방우유 1,000ml",
     "category": "유제품",
+    "name": "저지방우유 1,000ml",
     "storage": "냉장",
     "portionRule": {
       "type": "none",
@@ -1372,7 +1372,7 @@
       "value": 0,
       "display": ""
     },
-    "tag": "숫자 Tag + Price Tag",
+    "tag": "냉장고 예시문구 부착대체",
     "note": "",
     "keywords": [],
     "enabled": true,
