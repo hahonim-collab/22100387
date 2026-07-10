@@ -1239,12 +1239,12 @@
     "portionRule": {
       "type": "hour",
       "value": 24,
-      "display": "24H"
+      "display": "24h"
     },
     "openRule": {
       "type": "hour",
       "value": 24,
-      "display": "24H"
+      "display": "24h"
     },
     "tag": "숫자 Tag + Price Tag",
     "note": "",
