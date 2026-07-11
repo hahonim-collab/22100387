@@ -2262,7 +2262,7 @@
     "rules": [
       {
         "id": "rule-portion",
-        "label": "소분·제조 후",
+        "label": "소분 후",
         "type": "day",
         "value": 3,
         "display": "소분 후 3d"
@@ -2289,7 +2289,7 @@
     "rules": [
       {
         "id": "rule-portion",
-        "label": "소분·제조 후",
+        "label": "소분 후",
         "type": "day",
         "value": 3,
         "display": "소분 후 3d"
@@ -2316,7 +2316,7 @@
     "rules": [
       {
         "id": "rule-portion",
-        "label": "소분·제조 후",
+        "label": "소분 후",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -2343,10 +2343,10 @@
     "rules": [
       {
         "id": "rule-portion",
-        "label": "소분·제조 후",
+        "label": "소분 후",
         "type": "day",
         "value": 3,
-        "display": "3D"
+        "display": "3d"
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2363,7 +2363,7 @@
     "rules": [
       {
         "id": "rule-portion",
-        "label": "소분·제조 후",
+        "label": "제조 후",
         "type": "hour",
         "value": 24,
         "display": "24h"
@@ -2383,7 +2383,7 @@
     "rules": [
       {
         "id": "rule-portion",
-        "label": "소분·제조 후",
+        "label": "소분 후",
         "type": "day",
         "value": 2,
         "display": "2d"
@@ -2413,7 +2413,7 @@
     "rules": [
       {
         "id": "rule-portion",
-        "label": "소분·제조 후",
+        "label": "소분 후",
         "type": "day",
         "value": 2,
         "display": "2d"
