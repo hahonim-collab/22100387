@@ -80,7 +80,7 @@ function calc(){
   const y=exp.getFullYear(),m=String(exp.getMonth()+1).padStart(2,"0"),d=String(exp.getDate()).padStart(2,"0");
   const time=rule.type==="hour"?` ${String(exp.getHours()).padStart(2,"0")}:${String(exp.getMinutes()).padStart(2,"0")}`:"";
   $("expireDate").textContent=`${y}-${m}-${d}${time} ${dayNames[exp.getDay()]}`;
-  $("expireMeta").textContent=`${rule.label} ${ruleLabel(rule)}`;
+  $("expireMeta").textContent=`${rule.label}로부터 ${ruleLabel(rule)}`;
 }
 renderQuick();
 $("quickGrid").addEventListener("click",e=>{const b=e.target.closest("[data-index]");if(!b)return;const d=quickDate(quickRules[+b.dataset.index]);$("baseDate").value=localDateValue(d);document.querySelectorAll(".quick-date").forEach(x=>x.classList.toggle("active",x===b));calc();});
