@@ -4,13 +4,15 @@ const META_KEY="iqc_products_meta_v2";
 function clone(value){return JSON.parse(JSON.stringify(value));}
 function normalizeRule(rule={},index=0){
   const allowed=["none","hour","day","month"];
-  return {
+  const type=allowed.includes(rule.type)?rule.type:"none";
+  const normalized={
     id:String(rule.id||`rule-${Date.now()}-${index}`),
     label:String(rule.label||"기준").trim()||"기준",
-    type:allowed.includes(rule.type)?rule.type:"none",
-    value:Number.isFinite(Number(rule.value))?Math.max(0,Number(rule.value)):0,
-    display:String(rule.display??"").trim()
+    type,
+    value:Number.isFinite(Number(rule.value))?Math.max(0,Number(rule.value)):0
   };
+  if(type==="none")normalized.display=String(rule.display??"").trim();
+  return normalized;
 }
 function legacyRules(product){
   if(Array.isArray(product.rules))return product.rules;

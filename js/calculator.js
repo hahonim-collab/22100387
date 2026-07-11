@@ -19,7 +19,14 @@ function calculateExpiry(base,rule){
   if(rule.type==="month"){exp=addMonths(exp,rule.value);exp.setDate(exp.getDate()-1);}
   return exp;
 }
-function ruleLabel(rule){return rule?.display||({hour:`${rule?.value||0}H`,day:`${rule?.value||0}d`,month:`${rule?.value||0}M`}[rule?.type]||"-");}
+function ruleLabel(rule){
+  if(!rule)return "-";
+  const value=Number(rule.value)||0;
+  if(rule.type==="hour")return `${value}시간`;
+  if(rule.type==="day")return `${value}일`;
+  if(rule.type==="month")return `${value}개월`;
+  return rule.display||"-";
+}
 function isCalculable(rule){return !!rule&&rule.type!=="none"&&Number(rule.value)>0;}
 
 window.IQC_CALC = {

@@ -9,8 +9,7 @@
         "id": "rule-portion",
         "label": "추출 후",
         "type": "hour",
-        "value": 1,
-        "display": "1h"
+        "value": 1
       }
     ],
     "tag": "타이머",
@@ -29,8 +28,7 @@
         "id": "rule-portion",
         "label": "추출 후",
         "type": "hour",
-        "value": 4,
-        "display": "4h"
+        "value": 4
       }
     ],
     "tag": "",
@@ -49,8 +47,7 @@
         "id": "rule-portion",
         "label": "추출 후",
         "type": "hour",
-        "value": 8,
-        "display": "8h"
+        "value": 8
       }
     ],
     "tag": "",
@@ -69,8 +66,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -92,8 +88,7 @@
         "id": "rule-portion",
         "label": "추출 후",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -112,8 +107,7 @@
         "id": "rule-portion",
         "label": "추출 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       }
     ],
     "tag": "넥 Tag + Price Tag",
@@ -132,8 +126,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "수기 기입 또는 Price Tag",
@@ -152,8 +145,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 12,
-        "display": "12h"
+        "value": 12
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -177,8 +169,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -197,8 +188,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -220,8 +210,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -240,8 +229,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -260,8 +248,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "day",
-        "value": 2,
-        "display": "2d"
+        "value": 2
       }
     ],
     "tag": "넥 Tag + Price Tag",
@@ -280,8 +267,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -300,8 +286,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -325,8 +310,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 48,
-        "display": "48h"
+        "value": 48
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -345,8 +329,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "day",
-        "value": 2,
-        "display": "2d"
+        "value": 2
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -365,8 +348,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "day",
-        "value": 1,
-        "display": "당일"
+        "value": 1
       }
     ],
     "tag": "숫자 Tag",
@@ -385,8 +367,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -405,8 +386,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -425,8 +405,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -445,8 +424,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -465,8 +443,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -485,15 +462,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 2,
-        "display": "2d"
+        "value": 2
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 14,
-        "display": "14d"
+        "value": 14
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -512,8 +487,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 27,
-        "display": "27d"
+        "value": 27
       }
     ],
     "tag": "수기기입 또는 Price Tag",
@@ -532,8 +506,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 27,
-        "display": "27d"
+        "value": 27
       }
     ],
     "tag": "수기기입 또는 Price Tag",
@@ -552,8 +525,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 27,
-        "display": "27d"
+        "value": 27
       }
     ],
     "tag": "수기기입 또는 Price Tag",
@@ -572,8 +544,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 27,
-        "display": "27d"
+        "value": 27
       }
     ],
     "tag": "수기기입 또는 Price Tag",
@@ -592,8 +563,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 27,
-        "display": "27d"
+        "value": 27
       }
     ],
     "tag": "수기기입 또는 Price Tag",
@@ -612,8 +582,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 27,
-        "display": "27d"
+        "value": 27
       }
     ],
     "tag": "수기기입 또는 Price Tag",
@@ -632,8 +601,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 27,
-        "display": "27d"
+        "value": 27
       }
     ],
     "tag": "수기기입 또는 Price Tag",
@@ -652,8 +620,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 27,
-        "display": "27d"
+        "value": 27
       }
     ],
     "tag": "수기기입 또는 Price Tag",
@@ -672,8 +639,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 27,
-        "display": "27d"
+        "value": 27
       }
     ],
     "tag": "수기기입 또는 Price Tag",
@@ -692,8 +658,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 27,
-        "display": "27d"
+        "value": 27
       }
     ],
     "tag": "수기기입 또는 Price Tag",
@@ -712,8 +677,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 27,
-        "display": "27d"
+        "value": 27
       }
     ],
     "tag": "병하단 Price Tag",
@@ -732,8 +696,7 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -757,8 +720,7 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -782,8 +744,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 27,
-        "display": "27d"
+        "value": 27
       }
     ],
     "tag": "수기기입 또는 Price Tag",
@@ -802,8 +763,7 @@
         "id": "rule-portion",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 14,
-        "display": "14d"
+        "value": 14
       }
     ],
     "tag": "수기기입 또는 Price Tag",
@@ -822,15 +782,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -849,15 +807,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -876,15 +832,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 5,
-        "display": "5d"
+        "value": 5
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 1,
-        "display": "1M"
+        "value": 1
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -903,15 +857,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 3,
-        "display": "3M"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -930,15 +882,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 3,
-        "display": "3M"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -957,15 +907,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "수기기입 또는 Price Tag",
@@ -984,15 +932,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 1,
-        "display": "1d"
+        "value": 1
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1011,8 +957,7 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       },
       {
         "id": "rule-1783727616248-ge9hv",
@@ -1038,15 +983,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 3,
-        "display": "3M"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1085,15 +1028,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 3,
-        "display": "3M"
+        "value": 3
       }
     ],
     "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
@@ -1112,15 +1053,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
@@ -1139,8 +1078,7 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       }
     ],
     "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
@@ -1159,8 +1097,7 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       },
       {
         "id": "rule-1783727782207-vvzjg",
@@ -1186,8 +1123,7 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1206,15 +1142,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1233,15 +1167,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 2,
-        "display": "2d"
+        "value": 2
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 2,
-        "display": "2d"
+        "value": 2
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1267,8 +1199,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1294,8 +1225,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1314,15 +1244,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1345,15 +1273,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "hour",
-        "value": 24,
-        "display": "24H"
+        "value": 24
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "hour",
-        "value": 24,
-        "display": "24H"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1377,8 +1303,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 2,
-        "display": "2d"
+        "value": 2
       }
     ],
     "tag": "냉장고 예시문구 부착대체-개봉 후 다음 날까지 사용합니다.",
@@ -1397,8 +1322,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 2,
-        "display": "2d"
+        "value": 2
       }
     ],
     "tag": "냉장고 예시문구 부착대체-개봉 후 다음 날까지 사용합니다.",
@@ -1417,8 +1341,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 2,
-        "display": "2d"
+        "value": 2
       }
     ],
     "tag": "냉장고 예시문구 부착대체-개봉 후 다음 날까지 사용합니다.",
@@ -1437,15 +1360,13 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 2,
-        "display": "2d"
+        "value": 2
       },
       {
         "id": "rule-1783727963124-j2gkl",
         "label": "소분 후",
         "type": "day",
-        "value": 1,
-        "display": "당일"
+        "value": 1
       }
     ],
     "tag": "냉장고 예시문구 부착대체-개봉 후 다음 날까지 사용합니다.",
@@ -1464,8 +1385,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 3,
-        "display": "3M"
+        "value": 3
       }
     ],
     "tag": "수기기입 또는 Price Tag",
@@ -1484,8 +1404,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 1,
-        "display": "1M"
+        "value": 1
       }
     ],
     "tag": "수기기입 또는 Price Tag",
@@ -1504,8 +1423,7 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       },
       {
         "id": "rule-open",
@@ -1551,15 +1469,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 3,
-        "display": "3M"
+        "value": 3
       }
     ],
     "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
@@ -1578,15 +1494,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 3,
-        "display": "3M"
+        "value": 3
       }
     ],
     "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
@@ -1605,15 +1519,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 3,
-        "display": "3M"
+        "value": 3
       }
     ],
     "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
@@ -1632,15 +1544,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 3,
-        "display": "3M"
+        "value": 3
       }
     ],
     "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
@@ -1659,15 +1569,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 3,
-        "display": "3M"
+        "value": 3
       }
     ],
     "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
@@ -1686,15 +1594,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 3,
-        "display": "3M"
+        "value": 3
       }
     ],
     "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
@@ -1713,15 +1619,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 3,
-        "display": "3M"
+        "value": 3
       }
     ],
     "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
@@ -1740,15 +1644,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 2,
-        "display": "2d"
+        "value": 2
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 14,
-        "display": "14d"
+        "value": 14
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1767,15 +1669,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 2,
-        "display": "2d"
+        "value": 2
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1794,15 +1694,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1821,8 +1719,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1841,8 +1738,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1861,8 +1757,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1881,8 +1776,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1901,8 +1795,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1921,8 +1814,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1941,8 +1833,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1961,8 +1852,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -1981,8 +1871,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 2,
-        "display": "2d"
+        "value": 2
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2001,8 +1890,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2021,8 +1909,7 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2041,8 +1928,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2061,8 +1947,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2081,8 +1966,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2101,8 +1985,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2121,8 +2004,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2141,8 +2023,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2161,8 +2042,7 @@
         "id": "rule-open",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2181,8 +2061,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2204,8 +2083,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2224,8 +2102,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2244,8 +2121,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2264,15 +2140,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "소분 후 3d"
+        "value": 3
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 3,
-        "display": "3M"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag / 원팩 숫자 Tag + Price Tag 또는 수기 기입",
@@ -2291,15 +2165,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "소분 후 3d"
+        "value": 3
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2318,15 +2190,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 3,
-        "display": "3M"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2345,8 +2215,7 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3,
-        "display": "3d"
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2365,8 +2234,7 @@
         "id": "rule-portion",
         "label": "제조 후",
         "type": "hour",
-        "value": 24,
-        "display": "24h"
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2385,15 +2253,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 2,
-        "display": "2d"
+        "value": 2
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 14,
-        "display": "14d"
+        "value": 14
       }
     ],
     "tag": "숫자 Tag + Price Tag / 원팩 숫자 Tag + Price Tag 또는 수기기입",
@@ -2415,15 +2281,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 2,
-        "display": "2d"
+        "value": 2
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
@@ -2444,8 +2308,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 21,
-        "display": "21d"
+        "value": 21
       }
     ],
     "tag": "수기기입 또는 Price Tag(개봉일 ~ 만료일)",
@@ -2464,15 +2327,13 @@
         "id": "rule-1783728873762-4n6eo",
         "label": "소분 후",
         "type": "day",
-        "value": 7,
-        "display": "7d"
+        "value": 7
       },
       {
         "id": "rule-1783728887139-e0p1c",
         "label": "개봉 후(원팩)",
         "type": "month",
-        "value": 3,
-        "display": "3M"
+        "value": 3
       }
     ],
     "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",

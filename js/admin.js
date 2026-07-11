@@ -4,8 +4,11 @@ const {getGithubSettings,saveGithubSettings,getGithubToken,saveGithubToken,clear
 const $=id=>document.getElementById(id);
 const SESSION_KEY="iqc_admin_ok_v2", ADMIN_ID="22100387", ADMIN_PW="22100387*";
 let products=[],selectedId=null,source="";
-const ruleTypes=[["none","자동 계산 없음"],["hour","시간(H)"],["day","일(d)"],["month","개월(M)"]];
+const ruleTypes=[["none","자동 계산 없음"],["hour","시간"],["day","일"],["month","개월"]];
+const ruleLabels=["제조 후","추출 후","소분 후","개봉 후(원팩)","해동 후","기준"];
+function normalizeRuleLabel(label){return label==="개봉 후"?"개봉 후(원팩)":String(label??"").trim()}
 function options(){return ruleTypes.map(([v,t])=>`<option value="${v}">${t}</option>`).join("")}
+function escapeAttr(value){return String(value??"").replaceAll("&","&amp;").replaceAll('"',"&quot;").replaceAll("<","&lt;").replaceAll(">","&gt;")}
 
 function readGithubForm(){return{owner:$("githubOwner").value.trim(),repo:$("githubRepo").value.trim(),branch:$("githubBranch").value.trim()||"main",path:$("githubPath").value.trim()||"data/products.json"}}
 function fillGithubForm(){const s=getGithubSettings();$("githubOwner").value=s.owner;$("githubRepo").value=s.repo;$("githubBranch").value=s.branch;$("githubPath").value=s.path;$("githubToken").value=getGithubToken()}
@@ -20,33 +23,67 @@ function renderList(){
   $("adminCount").textContent=`${rows.length}개`;$("adminList").innerHTML=rows.map(p=>`<button class="admin-list-item ${p.id===selectedId?"active":""}" type="button" data-id="${p.id}"><strong>${p.name}</strong><span>${p.category} · ${p.enabled?"표시":"숨김"} · 순서 ${p.order}</span></button>`).join("")||`<div class="empty">품목이 없습니다.</div>`;
 }
 function createRule(label="",rule={type:"none",value:0,display:""}){
-  return {id:rule.id||`rule-${Date.now()}-${Math.random().toString(36).slice(2,7)}`,label,type:rule.type||"none",value:Number(rule.value)||0,display:rule.display||""};
+  const next={id:rule.id||`rule-${Date.now()}-${Math.random().toString(36).slice(2,7)}`,label:normalizeRuleLabel(label),type:rule.type||"none",value:Number(rule.value)||0};
+  if(next.type==="none")next.display=rule.display||"";
+  return next;
+}
+function formatRulePreview(rule){
+  const value=Number(rule.value)||0;
+  if(rule.type==="hour")return `${rule.label||"기준"} ${value}시간`;
+  if(rule.type==="day")return `${rule.label||"기준"} ${value}일`;
+  if(rule.type==="month")return `${rule.label||"기준"} ${value}개월`;
+  return `${rule.label||"기준"} ${rule.display||"예외 표기 없음"}`;
+}
+function getRuleLabel(row){
+  return normalizeRuleLabel(row.querySelector(".rule-label").value);
+}
+function syncRuleRow(row){
+  const type=row.querySelector(".rule-type").value;
+  const isCustomType=type==="none";
+  row.querySelector(".rule-value-field").hidden=isCustomType;
+  row.querySelector(".rule-display-field").hidden=!isCustomType;
+  const rule={
+    label:getRuleLabel(row),
+    type,
+    value:row.querySelector(".rule-value").value,
+    display:row.querySelector(".rule-display").value.trim()
+  };
+  row.querySelector(".rule-preview").textContent=formatRulePreview(rule);
 }
 function ruleRow(rule){
+  rule={...rule,label:normalizeRuleLabel(rule.label)};
   const el=document.createElement("div");el.className="rule-editor-row";el.dataset.ruleId=rule.id;
   el.innerHTML=`<div class="rule-row-head"><strong>계산 기준</strong><button type="button" class="rule-remove danger-button">삭제</button></div>
     <div class="rule-grid">
-      <div class="field full"><label>기준 이름</label><input class="rule-label" value="${rule.label.replaceAll('"','&quot;')}" placeholder="예: 제조 후, 소분 후, 개봉 후"></div>
+      <div class="field full"><label>기준 이름</label><input class="rule-label" list="ruleLabelOptions" value="${escapeAttr(rule.label)}" placeholder="예: 제조 후, 소분 후, 숙성 후"></div>
       <div class="field"><label>유형</label><select class="rule-type">${options()}</select></div>
-      <div class="field"><label>값</label><input class="rule-value" type="number" min="0" value="${rule.value||0}"></div>
-      <div class="field full"><label>화면 표기</label><input class="rule-display" value="${String(rule.display||"").replaceAll('"','&quot;')}" placeholder="예: 2d, 24H, 소비기한까지"></div>
+      <div class="field rule-value-field"><label>값</label><input class="rule-value" type="number" min="0" value="${rule.value||0}"></div>
+      <div class="field full rule-display-field"><label>예외 표기</label><input class="rule-display" value="${escapeAttr(rule.display||"")}" placeholder="예: 소비기한까지, 소분 X"></div>
+      <div class="rule-preview-wrap full"><span>미리보기</span><strong class="rule-preview"></strong></div>
     </div>`;
   el.querySelector(".rule-type").value=rule.type;
+  syncRuleRow(el);
   return el;
 }
 function renderRulesEditor(rules=[]){
-  const box=$("rulesEditor");box.innerHTML="";(rules.length?rules:[createRule("개봉 후")]).forEach(r=>box.appendChild(ruleRow(r)));
+  const box=$("rulesEditor");box.innerHTML="";(rules.length?rules:[createRule("개봉 후(원팩)")]).forEach(r=>box.appendChild(ruleRow(r)));
 }
 function collectRules(){
-  return [...document.querySelectorAll(".rule-editor-row")].map(row=>({
-    id:row.dataset.ruleId,label:row.querySelector(".rule-label").value.trim()||"기준",
-    type:row.querySelector(".rule-type").value,value:Number(row.querySelector(".rule-value").value)||0,
-    display:row.querySelector(".rule-display").value.trim()
-  }));
+  return [...document.querySelectorAll(".rule-editor-row")].map(row=>{
+    const type=row.querySelector(".rule-type").value;
+    const rule={
+      id:row.dataset.ruleId,
+      label:normalizeRuleLabel(getRuleLabel(row)||"기준"),
+      type,
+      value:type==="none"?0:Number(row.querySelector(".rule-value").value)||0
+    };
+    if(type==="none")rule.display=row.querySelector(".rule-display").value.trim();
+    return rule;
+  });
 }
 function clearForm(){
   selectedId=null;$("productForm").reset();$("productId").value="";$("enabled").checked=true;$("order").value=(Math.max(0,...products.map(p=>p.order))+1);
-  renderRulesEditor([createRule("개봉 후")]);
+  renderRulesEditor([createRule("개봉 후(원팩)")]);
   $("editorTitle").textContent="새 품목 추가";$("editorHint").textContent="필수 항목을 입력한 뒤 저장하세요.";$("deleteBtn").disabled=true;renderList();
 }
 function edit(id){
@@ -62,6 +99,8 @@ $("adminSearch").addEventListener("input",renderList);$("adminList").addEventLis
 $("addBtn").addEventListener("click",clearForm);$("cancelBtn").addEventListener("click",clearForm);
 $("addRuleBtn").addEventListener("click",()=>$("rulesEditor").appendChild(ruleRow(createRule(""))));
 $("rulesEditor").addEventListener("click",e=>{const btn=e.target.closest(".rule-remove");if(!btn)return;const rows=document.querySelectorAll(".rule-editor-row");if(rows.length===1){notify("계산 기준은 최소 한 개를 유지해 주세요.",true);return}btn.closest(".rule-editor-row").remove();});
+$("rulesEditor").addEventListener("input",e=>{const row=e.target.closest(".rule-editor-row");if(row)syncRuleRow(row);});
+$("rulesEditor").addEventListener("change",e=>{const row=e.target.closest(".rule-editor-row");if(row)syncRuleRow(row);});
 $("productForm").addEventListener("submit",async e=>{e.preventDefault();const id=selectedId||`prd-${Date.now()}`;
   const item={id,name:$("name").value.trim(),category:$("category").value.trim(),storage:$("storage").value.trim(),rules:collectRules(),tag:$("tag").value.trim(),note:$("note").value.trim(),keywords:$("keywords").value.split(",").map(v=>v.trim()).filter(Boolean),enabled:$("enabled").checked,order:Number($("order").value)||0};
   if(!item.name||!item.category){notify("품목명과 카테고리는 필수입니다.",true);return}
