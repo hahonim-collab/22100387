@@ -2339,5 +2339,24 @@
     "keywords": [],
     "enabled": true,
     "order": 111
+  },
+  {
+    "id": "prd-1783733282745",
+    "category": "티",
+    "name": "더블 블랙티 베이스",
+    "storage": "실온",
+    "rules": [
+      {
+        "id": "rule-1783733251027-v5jlm",
+        "label": "제조 후",
+        "type": "hour",
+        "value": 12
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "믹싱피처",
+    "keywords": [],
+    "enabled": true,
+    "order": 112
   }
 ]
