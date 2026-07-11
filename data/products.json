@@ -991,7 +991,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "DID, 마감시 반드시 냉장보관",
+    "note": "DID, 1TS, 마감시 반드시 냉장보관",
     "keywords": [],
     "enabled": true,
     "order": 49
