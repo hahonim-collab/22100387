@@ -915,7 +915,7 @@
       }
     ],
     "tag": "수기기입 또는 Price Tag",
-    "note": "DID, 실온 보관 시 당일 숫자 Tag",
+    "note": "DID, 1TS, 실온 보관 시 당일 숫자 Tag",
     "keywords": [],
     "enabled": true,
     "order": 46
