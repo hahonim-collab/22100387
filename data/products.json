@@ -2453,5 +2453,32 @@
     "keywords": [],
     "enabled": true,
     "order": 110
+  },
+  {
+    "id": "prd-1783728894779",
+    "category": "파우더",
+    "name": "슈가 파우더",
+    "storage": "실온",
+    "rules": [
+      {
+        "id": "rule-1783728873762-4n6eo",
+        "label": "소분 후",
+        "type": "none",
+        "value": 0,
+        "display": ""
+      },
+      {
+        "id": "rule-1783728887139-e0p1c",
+        "label": "개봉 후(원팩)",
+        "type": "none",
+        "value": 0,
+        "display": ""
+      }
+    ],
+    "tag": "",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 111
   }
 ]
