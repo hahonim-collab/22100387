@@ -1956,8 +1956,8 @@
   },
   {
     "id": "prd-0094",
-    "category": "베이스",
     "name": "슈크림 말차 베이스",
+    "category": "베이스",
     "storage": "냉장",
     "rules": [
       {
@@ -1968,7 +1968,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "믹싱 피처",
+    "note": "믹싱피처",
     "keywords": [],
     "enabled": false,
     "order": 94
