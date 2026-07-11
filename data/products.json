@@ -2463,19 +2463,19 @@
       {
         "id": "rule-1783728873762-4n6eo",
         "label": "소분 후",
-        "type": "none",
-        "value": 0,
-        "display": ""
+        "type": "day",
+        "value": 7,
+        "display": "7d"
       },
       {
         "id": "rule-1783728887139-e0p1c",
         "label": "개봉 후(원팩)",
-        "type": "none",
-        "value": 0,
-        "display": ""
+        "type": "month",
+        "value": 3,
+        "display": "3M"
       }
     ],
-    "tag": "",
+    "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag (개봉일 ~ 만료일)",
     "note": "",
     "keywords": [],
     "enabled": true,
