@@ -1452,7 +1452,7 @@
       }
     ],
     "tag": "Price Tag(개봉일~만료일)",
-    "note": "집게, DID 소분가능, 원팩 반드시 보관",
+    "note": "전용 집게, DID 소분가능, 원팩 반드시 보관",
     "keywords": [],
     "enabled": true,
     "order": 70
