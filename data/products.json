@@ -149,12 +149,10 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "블랙티, 민트티, 더블 블랙티 베이스",
+    "note": "블랙티, 민트티",
     "keywords": [
       "블랙티",
-      "민트티",
-      "더블 블랙티 베이스",
-      "더블블랙티베이스"
+      "민트티"
     ],
     "enabled": true,
     "order": 8
@@ -290,7 +288,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "쿨링 시 냉장보관 가능, 마감 시 반드시 냉장보관\n사용 중인 바모카와 초콜릿 드리즐은 내부품질기한이 일치해야 함",
+    "note": "바모카 펌프 / 쿨링 시 냉장보관 가능, 마감 시 반드시 냉장보관 /사용 중 바모카와 초콜릿 드리즐은 내부품질기한이 일치해야 함",
     "keywords": [
       "모카소스",
       "모카 소스",
@@ -314,7 +312,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "계량시 1펌프 13ml",
+    "note": "로스트 펌프, 계량시 1펌프 13ml",
     "keywords": [],
     "enabled": true,
     "order": 16
@@ -333,7 +331,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "마감 시 냉장보관 / 믹싱피처",
+    "note": "믹싱피처 / 마감 시 냉장보관",
     "keywords": [],
     "enabled": true,
     "order": 17
@@ -472,7 +470,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "",
+    "note": "화이트모카 펌프 / 계량 시 10ml",
     "keywords": [],
     "enabled": true,
     "order": 24
@@ -817,7 +815,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "",
+    "note": "DID or 샬로우자, 5TS",
     "keywords": [],
     "enabled": true,
     "order": 42
@@ -842,7 +840,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "",
+    "note": "DID, 집게",
     "keywords": [],
     "enabled": true,
     "order": 43
@@ -867,7 +865,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "",
+    "note": "DID, 2TS",
     "keywords": [],
     "enabled": true,
     "order": 44
@@ -892,7 +890,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "",
+    "note": "DID, 1TS",
     "keywords": [],
     "enabled": true,
     "order": 45
@@ -917,7 +915,7 @@
       }
     ],
     "tag": "수기기입 또는 Price Tag",
-    "note": "DID, 실온 보관 시 당일 숫자 Tag",
+    "note": "DID, 1TS, 실온 보관 시 당일 숫자 Tag",
     "keywords": [],
     "enabled": true,
     "order": 46
@@ -993,7 +991,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "마감시 반드시 냉장보관",
+    "note": "DID, 1TS, 마감시 반드시 냉장보관",
     "keywords": [],
     "enabled": true,
     "order": 49
@@ -1038,7 +1036,7 @@
       }
     ],
     "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
-    "note": "그래놀라 통+뚜껑",
+    "note": "그래놀라 통+뚜껑 밀봉",
     "keywords": [],
     "enabled": true,
     "order": 51
@@ -1082,7 +1080,7 @@
       }
     ],
     "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
-    "note": "DID",
+    "note": "DID, 집게",
     "keywords": [],
     "enabled": true,
     "order": 53
@@ -1108,7 +1106,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "개봉 후 밀봉보관",
+    "note": "DID, 1TS, 개봉 후 밀봉보관",
     "keywords": [],
     "enabled": false,
     "order": 54
@@ -1127,7 +1125,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "DID,2티스쿱",
+    "note": "DID,2TS",
     "keywords": [],
     "enabled": false,
     "order": 55
@@ -1152,7 +1150,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "개봉 후 잔량 냉장보관/DID,1티스쿱",
+    "note": "DID,1TS / 개봉 후 잔량 냉장보관",
     "keywords": [],
     "enabled": true,
     "order": 56
@@ -1177,7 +1175,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "",
+    "note": "화이트모카 펌프",
     "keywords": [],
     "enabled": true,
     "order": 57
@@ -1307,7 +1305,7 @@
       }
     ],
     "tag": "냉장고 예시문구 부착대체-개봉 후 다음 날까지 사용합니다.",
-    "note": "미개봉 D-2 마감시 폐기",
+    "note": "D-2까지 사용 후 폐기",
     "keywords": [],
     "enabled": true,
     "order": 63
@@ -1326,7 +1324,7 @@
       }
     ],
     "tag": "냉장고 예시문구 부착대체-개봉 후 다음 날까지 사용합니다.",
-    "note": "미개봉 D-2 마감시 폐기",
+    "note": "D-2까지 사용 후 폐기",
     "keywords": [],
     "enabled": true,
     "order": 64
@@ -1345,7 +1343,7 @@
       }
     ],
     "tag": "냉장고 예시문구 부착대체-개봉 후 다음 날까지 사용합니다.",
-    "note": "미개봉 D-2 마감시 폐기",
+    "note": "D-2까지 사용 후 폐기",
     "keywords": [],
     "enabled": true,
     "order": 65
@@ -1370,7 +1368,7 @@
       }
     ],
     "tag": "냉장고 예시문구 부착대체-개봉 후 다음 날까지 사용합니다.",
-    "note": "미개봉 D-2 마감시 폐기",
+    "note": "D-2까지 사용 후 폐기",
     "keywords": [],
     "enabled": true,
     "order": 66
@@ -1454,7 +1452,7 @@
       }
     ],
     "tag": "Price Tag(개봉일~만료일)",
-    "note": "DID 소분가능, 원팩 반드시 보관",
+    "note": "집게, DID 소분가능, 원팩 반드시 보관",
     "keywords": [],
     "enabled": true,
     "order": 70
@@ -1629,7 +1627,7 @@
       }
     ],
     "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
-    "note": "바닥 숫자텍",
+    "note": "매쉬망 쉐이커, 바닥 숫자텍",
     "keywords": [],
     "enabled": true,
     "order": 77
@@ -1654,7 +1652,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "소분 후 2d",
+    "note": "샬로우자, 2TS",
     "keywords": [],
     "enabled": true,
     "order": 78
@@ -1704,7 +1702,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "",
+    "note": "DID, 2TS",
     "keywords": [],
     "enabled": true,
     "order": 80
@@ -1913,7 +1911,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "전량소분, 냉장 또는 실온보관, 마감시 반드시 냉장보관",
+    "note": "샬로우자, 스팀스쿱 / 전량소분, 냉장 또는 실온보관, 마감시 반드시 냉장보관",
     "keywords": [],
     "enabled": true,
     "order": 91
@@ -1932,7 +1930,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "DID,5T스쿱",
+    "note": "DID,5TS",
     "keywords": [],
     "enabled": true,
     "order": 92
@@ -1970,7 +1968,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "믹싱 피처",
+    "note": "믹싱피처",
     "keywords": [],
     "enabled": false,
     "order": 94
@@ -2046,7 +2044,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "",
+    "note": "믹싱피처",
     "keywords": [],
     "enabled": true,
     "order": 98
@@ -2341,5 +2339,26 @@
     "keywords": [],
     "enabled": true,
     "order": 111
+  },
+  {
+    "id": "prd-1783733282745",
+    "category": "티",
+    "name": "더블 블랙티 베이스",
+    "storage": "실온",
+    "rules": [
+      {
+        "id": "rule-1783733251027-v5jlm",
+        "label": "제조 후",
+        "type": "hour",
+        "value": 12
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "믹싱피처",
+    "keywords": [
+      "더블블랙티베이스"
+    ],
+    "enabled": true,
+    "order": 112
   }
 ]
