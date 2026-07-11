@@ -34,3 +34,11 @@
 .rule-row-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.rule-row-head strong{font-size:13px}.rule-row-head .danger-button{padding:7px 10px;font-size:12px}
 
 .rule-preview-wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;border-radius:12px;background:#f2f7f5;border:1px solid #dbe9e3}.rule-preview-wrap span{font-size:12px;color:var(--muted)}.rule-preview-wrap strong{font-size:14px;color:var(--green);text-align:right}.rule-value-field[hidden],.rule-display-field[hidden],.rule-label-select-field[hidden],.rule-label-custom-field[hidden]{display:none}
+
+/* 모바일에서도 안전한 기준 이름 자동완성 */
+.rule-label-input-wrap{position:relative}
+.rule-label-suggestions{position:absolute;z-index:30;top:calc(100% + 6px);left:0;right:0;max-height:220px;overflow-y:auto;padding:6px;background:#fff;border:1px solid #d0d5dd;border-radius:10px;box-shadow:0 10px 24px rgba(16,24,40,.14)}
+.rule-label-suggestions[hidden]{display:none}
+.rule-label-suggestion{display:block;width:100%;padding:10px 12px;border:0;border-radius:7px;background:transparent;text-align:left;color:inherit;font:inherit;cursor:pointer}
+.rule-label-suggestion:hover,.rule-label-suggestion:focus{background:#f2f4f7;outline:none}
+@media (max-width:720px){.rule-label-suggestions{max-height:180px}.rule-label-suggestion{min-height:44px}}

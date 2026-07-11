@@ -37,6 +37,17 @@ function formatRulePreview(rule){
 function getRuleLabel(row){
   return normalizeRuleLabel(row.querySelector(".rule-label").value);
 }
+function renderRuleLabelSuggestions(input){
+  const box=input.parentElement.querySelector(".rule-label-suggestions");
+  if(!box)return;
+  const q=input.value.trim().toLowerCase();
+  const matches=ruleLabels.filter(label=>!q||label.toLowerCase().includes(q));
+  box.innerHTML=matches.map(label=>`<button type="button" class="rule-label-suggestion" data-value="${escapeAttr(label)}">${label}</button>`).join("");
+  box.hidden=matches.length===0;
+}
+function hideRuleLabelSuggestions(except=null){
+  document.querySelectorAll(".rule-label-suggestions").forEach(box=>{if(box!==except)box.hidden=true});
+}
 function syncRuleRow(row){
   const type=row.querySelector(".rule-type").value;
   const isCustomType=type==="none";
@@ -55,7 +66,7 @@ function ruleRow(rule){
   const el=document.createElement("div");el.className="rule-editor-row";el.dataset.ruleId=rule.id;
   el.innerHTML=`<div class="rule-row-head"><strong>계산 기준</strong><button type="button" class="rule-remove danger-button">삭제</button></div>
     <div class="rule-grid">
-      <div class="field full"><label>기준 이름</label><input class="rule-label" list="ruleLabelOptions" value="${escapeAttr(rule.label)}" placeholder="예: 제조 후, 소분 후, 숙성 후"></div>
+      <div class="field full rule-label-field"><label>기준 이름</label><div class="rule-label-input-wrap"><input class="rule-label" value="${escapeAttr(rule.label)}" placeholder="예: 제조 후, 소분 후, 숙성 후" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="rule-label-suggestions" hidden></div></div></div>
       <div class="field"><label>유형</label><select class="rule-type">${options()}</select></div>
       <div class="field rule-value-field"><label>값</label><input class="rule-value" type="number" min="0" value="${rule.value||0}"></div>
       <div class="field full rule-display-field"><label>예외 표기</label><input class="rule-display" value="${escapeAttr(rule.display||"")}" placeholder="예: 소비기한까지, 소분 X"></div>
@@ -99,8 +110,41 @@ $("adminSearch").addEventListener("input",renderList);$("adminList").addEventLis
 $("addBtn").addEventListener("click",clearForm);$("cancelBtn").addEventListener("click",clearForm);
 $("addRuleBtn").addEventListener("click",()=>$("rulesEditor").appendChild(ruleRow(createRule(""))));
 $("rulesEditor").addEventListener("click",e=>{const btn=e.target.closest(".rule-remove");if(!btn)return;const rows=document.querySelectorAll(".rule-editor-row");if(rows.length===1){notify("계산 기준은 최소 한 개를 유지해 주세요.",true);return}btn.closest(".rule-editor-row").remove();});
-$("rulesEditor").addEventListener("input",e=>{const row=e.target.closest(".rule-editor-row");if(row)syncRuleRow(row);});
+$("rulesEditor").addEventListener("focusin",e=>{
+  if(!e.target.matches(".rule-label"))return;
+  hideRuleLabelSuggestions();
+  renderRuleLabelSuggestions(e.target);
+});
+$("rulesEditor").addEventListener("compositionstart",e=>{if(e.target.matches(".rule-label"))e.target.dataset.composing="1";});
+$("rulesEditor").addEventListener("compositionend",e=>{
+  if(!e.target.matches(".rule-label"))return;
+  delete e.target.dataset.composing;
+  const row=e.target.closest(".rule-editor-row");
+  renderRuleLabelSuggestions(e.target);
+  if(row)syncRuleRow(row);
+});
+$("rulesEditor").addEventListener("input",e=>{
+  const row=e.target.closest(".rule-editor-row");
+  if(!row)return;
+  if(e.target.matches(".rule-label")){
+    renderRuleLabelSuggestions(e.target);
+    if(e.target.dataset.composing==="1"||e.isComposing)return;
+  }
+  syncRuleRow(row);
+});
 $("rulesEditor").addEventListener("change",e=>{const row=e.target.closest(".rule-editor-row");if(row)syncRuleRow(row);});
+$("rulesEditor").addEventListener("pointerdown",e=>{
+  const button=e.target.closest(".rule-label-suggestion");
+  if(!button)return;
+  e.preventDefault();
+  const wrap=button.closest(".rule-label-input-wrap");
+  const input=wrap.querySelector(".rule-label");
+  input.value=button.dataset.value;
+  wrap.querySelector(".rule-label-suggestions").hidden=true;
+  syncRuleRow(button.closest(".rule-editor-row"));
+  input.focus();
+});
+document.addEventListener("pointerdown",e=>{if(!e.target.closest(".rule-label-input-wrap"))hideRuleLabelSuggestions();});
 $("productForm").addEventListener("submit",async e=>{e.preventDefault();const id=selectedId||`prd-${Date.now()}`;
   const item={id,name:$("name").value.trim(),category:$("category").value.trim(),storage:$("storage").value.trim(),rules:collectRules(),tag:$("tag").value.trim(),note:$("note").value.trim(),keywords:$("keywords").value.split(",").map(v=>v.trim()).filter(Boolean),enabled:$("enabled").checked,order:Number($("order").value)||0};
   if(!item.name||!item.category){notify("품목명과 카테고리는 필수입니다.",true);return}
