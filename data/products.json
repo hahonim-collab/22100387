@@ -130,7 +130,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -490,7 +490,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 14,
         "display": "14d"
@@ -510,7 +510,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 27,
         "display": "27d"
@@ -530,7 +530,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 27,
         "display": "27d"
@@ -550,7 +550,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 27,
         "display": "27d"
@@ -570,7 +570,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 27,
         "display": "27d"
@@ -590,7 +590,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 27,
         "display": "27d"
@@ -610,7 +610,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 27,
         "display": "27d"
@@ -630,7 +630,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 27,
         "display": "27d"
@@ -650,7 +650,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 27,
         "display": "27d"
@@ -670,7 +670,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 27,
         "display": "27d"
@@ -690,7 +690,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 27,
         "display": "27d"
@@ -710,7 +710,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 27,
         "display": "27d"
@@ -755,7 +755,7 @@
     "rules": [
       {
         "id": "rule-portion",
-        "label": "소분·제조 후",
+        "label": "소분 후",
         "type": "day",
         "value": 3,
         "display": "3d"
@@ -780,7 +780,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 27,
         "display": "27d"
@@ -800,7 +800,7 @@
     "rules": [
       {
         "id": "rule-portion",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 14,
         "display": "14d"
@@ -827,7 +827,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -854,7 +854,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -881,7 +881,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 1,
         "display": "1M"
@@ -908,7 +908,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 3,
         "display": "3M"
@@ -935,7 +935,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 3,
         "display": "3M"
@@ -962,7 +962,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -989,7 +989,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -1016,7 +1016,7 @@
       },
       {
         "id": "rule-1783727616248-ge9hv",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "none",
         "value": 0,
         "display": "소비기한 표시일까지"
@@ -1043,7 +1043,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 3,
         "display": "3M"
@@ -1063,7 +1063,7 @@
     "rules": [
       {
         "id": "rule-1783727640751-jb7o9",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "none",
         "value": 0,
         "display": "소비기한까지"
@@ -1090,7 +1090,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 3,
         "display": "3M"
@@ -1117,7 +1117,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -1137,7 +1137,7 @@
     "rules": [
       {
         "id": "rule-portion",
-        "label": "소분·제조 후",
+        "label": "소분 후",
         "type": "day",
         "value": 3,
         "display": "3d"
@@ -1164,7 +1164,7 @@
       },
       {
         "id": "rule-1783727782207-vvzjg",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "none",
         "value": 0,
         "display": "소비기한까지"
@@ -1211,7 +1211,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -1238,7 +1238,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 2,
         "display": "2d"
@@ -1265,7 +1265,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 3,
         "display": "3d"
@@ -1292,7 +1292,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 3,
         "display": "3d"
@@ -1319,7 +1319,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "hour",
         "value": 24,
         "display": "24h"
@@ -1350,7 +1350,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "hour",
         "value": 24,
         "display": "24H"
@@ -1375,7 +1375,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 2,
         "display": "2d"
@@ -1395,7 +1395,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 2,
         "display": "2d"
@@ -1415,7 +1415,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 2,
         "display": "2d"
@@ -1435,7 +1435,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 2,
         "display": "2d"
@@ -1462,7 +1462,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 3,
         "display": "3M"
@@ -1482,7 +1482,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 1,
         "display": "1M"
@@ -1529,7 +1529,7 @@
     "rules": [
       {
         "id": "rule-portion",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "none",
         "value": 0,
         "display": "소비기한까지"
@@ -1556,7 +1556,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 3,
         "display": "3M"
@@ -1583,7 +1583,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 3,
         "display": "3M"
@@ -1610,7 +1610,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 3,
         "display": "3M"
@@ -1637,7 +1637,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 3,
         "display": "3M"
@@ -1664,7 +1664,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 3,
         "display": "3M"
@@ -1691,7 +1691,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 3,
         "display": "3M"
@@ -1718,7 +1718,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 3,
         "display": "3M"
@@ -1745,7 +1745,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 14,
         "display": "14d"
@@ -1772,7 +1772,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 3,
         "display": "3d"
@@ -1799,7 +1799,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -1819,7 +1819,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -1839,7 +1839,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -1859,7 +1859,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -1879,7 +1879,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -1899,7 +1899,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -1919,7 +1919,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -1939,7 +1939,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -1959,7 +1959,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -1979,7 +1979,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 2,
         "display": "2d"
@@ -1999,7 +1999,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -2059,7 +2059,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -2099,7 +2099,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -2119,7 +2119,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -2139,7 +2139,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 3,
         "display": "3d"
@@ -2202,7 +2202,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 3,
         "display": "3d"
@@ -2269,7 +2269,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 3,
         "display": "3M"
@@ -2296,7 +2296,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -2323,7 +2323,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 3,
         "display": "3M"
@@ -2390,7 +2390,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 14,
         "display": "14d"
@@ -2420,7 +2420,7 @@
       },
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 7,
         "display": "7d"
@@ -2442,7 +2442,7 @@
     "rules": [
       {
         "id": "rule-open",
-        "label": "개봉 후",
+        "label": "개봉 후(원팩)",
         "type": "day",
         "value": 21,
         "display": "21d"
