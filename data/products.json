@@ -2436,5 +2436,30 @@
     "keywords": [],
     "enabled": true,
     "order": 116
+  },
+  {
+    "id": "prd-1783980971335",
+    "category": "소스",
+    "name": "애프리콧 소스",
+    "storage": "냉장",
+    "rules": [
+      {
+        "id": "rule-1783980890970-wdvzd",
+        "label": "개봉 후(원팩)",
+        "type": "day",
+        "value": 7
+      },
+      {
+        "id": "rule-1783980947679-73tek",
+        "label": "소분 후",
+        "type": "day",
+        "value": 3
+      }
+    ],
+    "tag": "",
+    "note": "DID, 2TS",
+    "keywords": [],
+    "enabled": true,
+    "order": 117
   }
 ]
