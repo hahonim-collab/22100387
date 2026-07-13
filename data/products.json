@@ -2142,7 +2142,7 @@
       },
       {
         "id": "rule-open",
-        "label": "10개봉 후(원팩)",
+        "label": "개봉 후(원팩)",
         "type": "month",
         "value": 3
       }
