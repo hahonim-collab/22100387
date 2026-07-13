@@ -2417,5 +2417,24 @@
     "keywords": [],
     "enabled": true,
     "order": 115
+  },
+  {
+    "id": "prd-1783980887944",
+    "category": "티",
+    "name": "더블 스트랭스 조이풀 메들리 티",
+    "storage": "실온",
+    "rules": [
+      {
+        "id": "rule-1783980808727-vtt4n",
+        "label": "제조 후",
+        "type": "hour",
+        "value": 12
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "티 디스펜서",
+    "keywords": [],
+    "enabled": true,
+    "order": 116
   }
 ]
