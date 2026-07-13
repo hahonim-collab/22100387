@@ -2360,5 +2360,24 @@
     ],
     "enabled": true,
     "order": 112
+  },
+  {
+    "id": "prd-1783980469691",
+    "category": "베이스",
+    "name": "블루베리 베이스",
+    "storage": "냉장",
+    "rules": [
+      {
+        "id": "rule-1783980430527-o6egu",
+        "label": "개봉 후(원팩)",
+        "type": "day",
+        "value": 7
+      }
+    ],
+    "tag": "",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 113
   }
 ]
