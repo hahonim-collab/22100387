@@ -2087,7 +2087,7 @@
     "tag": "숫자 Tag + Price Tag",
     "note": "개봉 후 냉장보관",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 100
   },
   {
