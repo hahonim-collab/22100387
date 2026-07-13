@@ -2379,5 +2379,24 @@
     "keywords": [],
     "enabled": true,
     "order": 113
+  },
+  {
+    "id": "prd-1783980693366",
+    "category": "베이스",
+    "name": "코코넛 워터",
+    "storage": "냉장",
+    "rules": [
+      {
+        "id": "rule-1783980635256-suffq",
+        "label": "개봉 후(원팩)",
+        "type": "day",
+        "value": 3
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 114
   }
 ]
