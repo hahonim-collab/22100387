@@ -2138,11 +2138,11 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 3
+        "value": 1
       },
       {
         "id": "rule-open",
-        "label": "개봉 후(원팩)",
+        "label": "10개봉 후(원팩)",
         "type": "month",
         "value": 3
       }
