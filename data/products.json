@@ -2461,5 +2461,30 @@
     "keywords": [],
     "enabled": true,
     "order": 117
+  },
+  {
+    "id": "prd-1783981142822",
+    "category": "토핑",
+    "name": "쫀득 펄 토핑",
+    "storage": "실온",
+    "rules": [
+      {
+        "id": "rule-1783981055263-4sexm",
+        "label": "개봉 후(원팩)",
+        "type": "month",
+        "value": 3
+      },
+      {
+        "id": "rule-1783981089067-vc0ym",
+        "label": "소분 후",
+        "type": "day",
+        "value": 3
+      }
+    ],
+    "tag": "수기기입 또는 Price Tag / 숫자 Tag + Price Tag",
+    "note": "DID, 1TS",
+    "keywords": [],
+    "enabled": true,
+    "order": 118
   }
 ]
