@@ -2483,7 +2483,11 @@
     ],
     "tag": "수기기입 또는 Price Tag / 숫자 Tag + Price Tag",
     "note": "DID, 1TS",
-    "keywords": [],
+    "keywords": [
+      "쫀득펄",
+      "쫀득펄토핑",
+      "쫀득펄 토핑"
+    ],
     "enabled": true,
     "order": 118
   }
