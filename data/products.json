@@ -1045,23 +1045,24 @@
     "id": "prd-0052",
     "category": "토핑",
     "name": "팥앙금 찹쌀떡 30PC",
-    "storage": "실온",
+    "storage": "냉장",
     "rules": [
       {
         "id": "rule-portion",
-        "label": "소분 후",
-        "type": "day",
-        "value": 3
+        "label": "개봉 후(원팩)",
+        "type": "none",
+        "value": 0,
+        "display": "소비기한까지"
       },
       {
         "id": "rule-open",
-        "label": "개봉 후(원팩)",
+        "label": "소분 후",
         "type": "day",
-        "value": 7
+        "value": 3
       }
     ],
-    "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
-    "note": "",
+    "tag": "소분 후 숫자 Tag + Price Tag",
+    "note": "* 트레이 제거 후 원팩 그대로 밀봉하여 냉장 보관",
     "keywords": [],
     "enabled": true,
     "order": 52
