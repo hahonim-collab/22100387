@@ -31,7 +31,20 @@
 .expire-meta{font-size:13px;line-height:1.5;margin-top:7px}
 .expire-box.invalid{border-color:var(--line);background:#f7f7f7}.expire-box.invalid .expire-date{color:var(--muted)}
 @media(min-width:680px){.quick-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.item-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:500px){.form-grid{grid-template-columns:1fr 105px}.section-heading .ghost-button{font-size:12px;padding:8px 9px}}
+@media (max-width:500px){
+  .form-grid{
+    grid-template-columns:1fr 105px;
+  }
+
+  .section-heading .ghost-button{
+    font-size:12px;
+    padding:8px 12px;
+    white-space:nowrap;
+    width:auto;
+    flex-shrink:0;
+
+  }
+}
 
 /* 요일별 색상 */
 .quick-date.sun,.expire-box.sun{background:#fff1f1;border-color:#e53935}
