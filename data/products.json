@@ -892,7 +892,7 @@
     "tag": "숫자 Tag + Price Tag",
     "note": "DID, 1TS",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 45
   },
   {
