@@ -1064,7 +1064,7 @@
     "tag": "소분 후 숫자 Tag + Price Tag",
     "note": "* 트레이 제거 후 원팩 그대로 밀봉하여 냉장 보관",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 52
   },
   {
