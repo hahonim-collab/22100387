@@ -1083,7 +1083,7 @@
     "tag": "소분 후 숫자 Tag + Price Tag / 개봉 후 수기기입 또는 Price Tag",
     "note": "DID, 집게",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 53
   },
   {
