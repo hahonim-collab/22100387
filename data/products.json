@@ -2313,7 +2313,7 @@
     "tag": "수기기입 또는 Price Tag(개봉일 ~ 만료일)",
     "note": "",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 110
   },
   {
