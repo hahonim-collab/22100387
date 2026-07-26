@@ -428,7 +428,7 @@
     "tag": "숫자 Tag + Price Tag",
     "note": "DID,스팀스푼",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 22
   },
   {
