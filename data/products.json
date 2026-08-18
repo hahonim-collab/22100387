@@ -636,8 +636,8 @@
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
-        "type": "day",
-        "value": 27
+        "type": "month",
+        "value": 1
       }
     ],
     "tag": "수기기입 또는 Price Tag",
