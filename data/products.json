@@ -630,7 +630,7 @@
   {
     "id": "prd-0033",
     "category": "소스/시럽",
-    "name": "심플시럽 DT Bar / 휘핑제조용",
+    "name": "심플시럽",
     "storage": "실온",
     "rules": [
       {
@@ -641,7 +641,7 @@
       }
     ],
     "tag": "수기기입 또는 Price Tag",
-    "note": "",
+    "note": "* 심플시럽 컨디바용 일원화",
     "keywords": [],
     "enabled": true,
     "order": 33
