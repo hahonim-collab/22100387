@@ -610,15 +610,15 @@
   },
   {
     "id": "prd-0032",
-    "category": "소스/시럽",
     "name": "솔티드 카라멜 시럽 850ml",
+    "category": "소스/시럽",
     "storage": "실온",
     "rules": [
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
-        "type": "day",
-        "value": 27
+        "type": "month",
+        "value": 1
       }
     ],
     "tag": "수기기입 또는 Price Tag",
