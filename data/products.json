@@ -483,13 +483,19 @@
     "rules": [
       {
         "id": "rule-open",
+        "label": "소분 후",
+        "type": "day",
+        "value": 2
+      },
+      {
+        "id": "rule-1787034610477-glq5w",
         "label": "개봉 후(원팩)",
-        "type": "month",
-        "value": 1
+        "type": "day",
+        "value": 14
       }
     ],
     "tag": "수기기입 또는 Price Tag",
-    "note": "드리즐용 키트 24시간",
+    "note": "체험매장 고객키트 제공 시, 24시간",
     "keywords": [],
     "enabled": true,
     "order": 25
