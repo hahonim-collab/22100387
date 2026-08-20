@@ -2667,5 +2667,24 @@
     "keywords": [],
     "enabled": true,
     "order": 126
+  },
+  {
+    "id": "prd-1787203666545",
+    "category": "베이스",
+    "name": "고구마 프리믹스(고구마 베이스)",
+    "storage": "냉장",
+    "rules": [
+      {
+        "id": "rule-1787203634100-g4pj6",
+        "label": "제조 후",
+        "type": "hour",
+        "value": 24
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "믹싱피처",
+    "keywords": [],
+    "enabled": true,
+    "order": 127
   }
 ]
