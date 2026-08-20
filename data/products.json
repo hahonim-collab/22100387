@@ -2686,5 +2686,30 @@
     "keywords": [],
     "enabled": true,
     "order": 127
+  },
+  {
+    "id": "prd-1787203724915",
+    "category": "토핑",
+    "name": "카스텔라 고물(냉동)",
+    "storage": "원팩 냉동, 소분 냉장",
+    "rules": [
+      {
+        "id": "rule-1787203670406-wbxog",
+        "label": "개봉 후(원팩)",
+        "type": "day",
+        "value": 7
+      },
+      {
+        "id": "rule-1787203707742-lhdrh",
+        "label": "소분 후",
+        "type": "day",
+        "value": 1
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "소분 후 냉장 당일",
+    "keywords": [],
+    "enabled": true,
+    "order": 128
   }
 ]
