@@ -2585,5 +2585,30 @@
     "keywords": [],
     "enabled": true,
     "order": 122
+  },
+  {
+    "id": "prd-1787203533949",
+    "category": "파우더",
+    "name": "호지차 파우더",
+    "storage": "실온",
+    "rules": [
+      {
+        "id": "rule-1787203476987-e9vcb",
+        "label": "개봉 후(원팩)",
+        "type": "month",
+        "value": 3
+      },
+      {
+        "id": "rule-1787203506526-a1bj4",
+        "label": "소분 후",
+        "type": "day",
+        "value": 7
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "DID or 원팩",
+    "keywords": [],
+    "enabled": true,
+    "order": 123
   }
 ]
