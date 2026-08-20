@@ -2547,5 +2547,24 @@
     "keywords": [],
     "enabled": true,
     "order": 120
+  },
+  {
+    "id": "prd-1787203421113",
+    "category": "폼",
+    "name": "글레이즈드 폼",
+    "storage": "냉장",
+    "rules": [
+      {
+        "id": "rule-1787203385598-gdy7y",
+        "label": "제조 후",
+        "type": "hour",
+        "value": 24
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "믹싱 피처",
+    "keywords": [],
+    "enabled": true,
+    "order": 121
   }
 ]
