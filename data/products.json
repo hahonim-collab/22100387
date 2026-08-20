@@ -2566,5 +2566,24 @@
     "keywords": [],
     "enabled": true,
     "order": 121
+  },
+  {
+    "id": "prd-1787203473259",
+    "category": "베이스",
+    "name": "호지차 샷",
+    "storage": "냉장",
+    "rules": [
+      {
+        "id": "rule-1787203431699-xt39e",
+        "label": "제조 후",
+        "type": "hour",
+        "value": 24
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "원형 쉐이커 보틀",
+    "keywords": [],
+    "enabled": true,
+    "order": 122
   }
 ]
