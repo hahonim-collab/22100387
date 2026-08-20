@@ -2707,7 +2707,7 @@
       }
     ],
     "tag": "숫자 Tag + Price Tag",
-    "note": "소분 후 냉장 당일",
+    "note": "소분 후 냉장 당일, did, 2ts",
     "keywords": [],
     "enabled": true,
     "order": 128
