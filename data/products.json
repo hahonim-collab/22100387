@@ -2497,5 +2497,30 @@
     ],
     "enabled": true,
     "order": 118
+  },
+  {
+    "id": "prd-1787203316927",
+    "category": "소스",
+    "name": "글레이즈드 소스",
+    "storage": "원팩 냉장, 소분 실온",
+    "rules": [
+      {
+        "id": "rule-1787203191719-aj2k9",
+        "label": "개봉 후(원팩)",
+        "type": "day",
+        "value": 7
+      },
+      {
+        "id": "rule-1787203281357-eo75x",
+        "label": "소분 후",
+        "type": "day",
+        "value": 2
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 119
   }
 ]
