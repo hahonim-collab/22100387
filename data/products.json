@@ -2522,5 +2522,30 @@
     "keywords": [],
     "enabled": true,
     "order": 119
+  },
+  {
+    "id": "prd-1787203382437",
+    "category": "파우더",
+    "name": "번트 카라멜 파우더",
+    "storage": "실온",
+    "rules": [
+      {
+        "id": "rule-1787203322918-7xqko",
+        "label": "개봉 후(원팩)",
+        "type": "month",
+        "value": 3
+      },
+      {
+        "id": "rule-1787203347277-9byxp",
+        "label": "소분 후",
+        "type": "day",
+        "value": 3
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "파우더 쉐이커(매쉬망)",
+    "keywords": [],
+    "enabled": true,
+    "order": 120
   }
 ]
