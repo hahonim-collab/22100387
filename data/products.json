@@ -2207,7 +2207,7 @@
     "tag": "숫자 Tag + Price Tag",
     "note": "매쉬망 쉐이커",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 105
   },
   {
