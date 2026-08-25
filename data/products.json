@@ -2145,7 +2145,7 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 1
+        "value": 3
       },
       {
         "id": "rule-open",
