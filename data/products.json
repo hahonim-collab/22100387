@@ -2245,7 +2245,7 @@
     "tag": "숫자 Tag + Price Tag",
     "note": "믹싱피처",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 107
   },
   {
