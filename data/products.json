@@ -2441,7 +2441,7 @@
     "tag": "숫자 Tag + Price Tag",
     "note": "티 디스펜서",
     "keywords": [],
-    "enabled": true,
+    "enabled": false,
     "order": 116
   },
   {
