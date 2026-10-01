@@ -2226,7 +2226,7 @@
     "tag": "숫자 Tag + Price Tag",
     "note": "DID, 2TS",
     "keywords": [],
-    "enabled": false,
+    "enabled": true,
     "order": 106
   },
   {
