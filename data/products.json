@@ -2022,7 +2022,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 3
+        "value": 7
       }
     ],
     "tag": "숫자 Tag + Price Tag",
