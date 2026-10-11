@@ -309,6 +309,12 @@
         "label": "제조 후",
         "type": "hour",
         "value": 48
+      },
+      {
+        "id": "rule-1791759622600-zy8wu",
+        "label": "개봉 후(원팩)",
+        "type": "month",
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
