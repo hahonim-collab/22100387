@@ -1172,13 +1172,13 @@
         "id": "rule-portion",
         "label": "소분 후",
         "type": "day",
-        "value": 2
+        "value": 3
       },
       {
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 2
+        "value": 3
       }
     ],
     "tag": "숫자 Tag + Price Tag",
