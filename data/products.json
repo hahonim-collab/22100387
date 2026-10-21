@@ -2793,5 +2793,24 @@
     "keywords": [],
     "enabled": true,
     "order": 132
+  },
+  {
+    "id": "prd-1792563670010",
+    "category": "베이스",
+    "name": "뱅쇼 베이스(프리믹스)",
+    "storage": "냉장",
+    "rules": [
+      {
+        "id": "rule-1792563625896-sy7wx",
+        "label": "제조 후",
+        "type": "day",
+        "value": 2
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "믹싱피처\n반배합 제조 가능",
+    "keywords": [],
+    "enabled": true,
+    "order": 133
   }
 ]
