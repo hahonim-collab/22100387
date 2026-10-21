@@ -2749,5 +2749,24 @@
     "keywords": [],
     "enabled": true,
     "order": 130
+  },
+  {
+    "id": "prd-1792563526614",
+    "category": "폼",
+    "name": "버터 스카치 커피 크림",
+    "storage": "냉장",
+    "rules": [
+      {
+        "id": "rule-1792563465012-wmk2r",
+        "label": "제조 후",
+        "type": "hour",
+        "value": 24
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "믹싱피처",
+    "keywords": [],
+    "enabled": true,
+    "order": 131
   }
 ]
