@@ -2768,5 +2768,30 @@
     "keywords": [],
     "enabled": true,
     "order": 131
+  },
+  {
+    "id": "prd-1792563587055",
+    "category": "토핑",
+    "name": "브륄레 토핑",
+    "storage": "실온",
+    "rules": [
+      {
+        "id": "rule-1792563535559-ayxmv",
+        "label": "개봉 후(원팩)",
+        "type": "month",
+        "value": 3
+      },
+      {
+        "id": "rule-1792563553619-voa8f",
+        "label": "소분 후",
+        "type": "day",
+        "value": 7
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "토핑용 쉐이커",
+    "keywords": [],
+    "enabled": true,
+    "order": 132
   }
 ]
