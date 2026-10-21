@@ -2724,5 +2724,30 @@
     "keywords": [],
     "enabled": true,
     "order": 129
+  },
+  {
+    "id": "prd-1792563448379",
+    "category": "소스/시럽",
+    "name": "버터 스카치 소스",
+    "storage": "실온",
+    "rules": [
+      {
+        "id": "rule-1792563068804-sbv63",
+        "label": "소분 후",
+        "type": "day",
+        "value": 2
+      },
+      {
+        "id": "rule-1792563102466-bwmip",
+        "label": "개봉 후(원팩)",
+        "type": "day",
+        "value": 0
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "원팩 내품 수기기입 가능",
+    "keywords": [],
+    "enabled": true,
+    "order": 130
   }
 ]
