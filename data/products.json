@@ -2705,5 +2705,24 @@
     "keywords": [],
     "enabled": true,
     "order": 128
+  },
+  {
+    "id": "prd-1792563057728",
+    "category": "토핑",
+    "name": "브라운 토피넛 토핑",
+    "storage": "실온",
+    "rules": [
+      {
+        "id": "rule-1792562776622-g32nc",
+        "label": "소분 후",
+        "type": "day",
+        "value": 7
+      }
+    ],
+    "tag": "",
+    "note": "전량 소분/토핑용 쉐이커",
+    "keywords": [],
+    "enabled": true,
+    "order": 129
   }
 ]
