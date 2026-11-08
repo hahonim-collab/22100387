@@ -2880,13 +2880,13 @@
         "id": "rule-1793266945342-g7c3i",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 7
+        "value": 5
       },
       {
         "id": "rule-1793267040595-719o5",
         "label": "소분 후",
-        "type": "day",
-        "value": 2
+        "type": "hour",
+        "value": 24
       }
     ],
     "tag": "숫자 Tag + Price Tag",
