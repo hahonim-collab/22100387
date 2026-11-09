@@ -2307,7 +2307,7 @@
         "id": "rule-open",
         "label": "개봉 후(원팩)",
         "type": "day",
-        "value": 21
+        "value": 210
       }
     ],
     "tag": "수기기입 또는 Price Tag(개봉일 ~ 만료일)",
