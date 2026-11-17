@@ -2977,5 +2977,24 @@
     ],
     "enabled": true,
     "order": 141
+  },
+  {
+    "id": "prd-1794899269589",
+    "category": "티백",
+    "name": "홀리데이 캐모마일 티 20CT",
+    "storage": "실온",
+    "rules": [
+      {
+        "id": "rule-1794899243322-yvf7i",
+        "label": "개봉 후(원팩)",
+        "type": "month",
+        "value": 3
+      }
+    ],
+    "tag": "수기 기입",
+    "note": "",
+    "keywords": [],
+    "enabled": true,
+    "order": 142
   }
 ]
