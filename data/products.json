@@ -2894,5 +2894,24 @@
     "keywords": [],
     "enabled": true,
     "order": 137
+  },
+  {
+    "id": "prd-1794899013818",
+    "category": "베이스",
+    "name": "릴렉싱 베이스",
+    "storage": "냉장",
+    "rules": [
+      {
+        "id": "rule-1794898873337-fhmz4",
+        "label": "제조 후",
+        "type": "day",
+        "value": 2
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "믹싱피처",
+    "keywords": [],
+    "enabled": true,
+    "order": 138
   }
 ]
