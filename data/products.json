@@ -2956,5 +2956,24 @@
     ],
     "enabled": true,
     "order": 140
+  },
+  {
+    "id": "prd-1794899205623",
+    "category": "토핑",
+    "name": "로즈마리 15PC",
+    "storage": "냉장",
+    "rules": [
+      {
+        "id": "rule-1794899153984-9q04y",
+        "label": "소분 후",
+        "type": "day",
+        "value": 2
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "*원팩 보관 필수*",
+    "keywords": [],
+    "enabled": true,
+    "order": 141
   }
 ]
