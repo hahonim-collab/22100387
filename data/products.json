@@ -2951,7 +2951,9 @@
     ],
     "tag": "숫자 Tag + Price Tag",
     "note": "티 디스펜서or워터피처",
-    "keywords": [],
+    "keywords": [
+      "히비스커스티"
+    ],
     "enabled": true,
     "order": 140
   }
