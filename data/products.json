@@ -2996,5 +2996,25 @@
     "keywords": [],
     "enabled": true,
     "order": 142
+  },
+  {
+    "id": "prd-1794899360670",
+    "category": "토핑",
+    "name": "헬로키티 리본 토핑",
+    "storage": "실온",
+    "rules": [
+      {
+        "id": "rule-1794899280186-oe1so",
+        "label": "개봉 후(원팩)",
+        "type": "none",
+        "value": 0,
+        "display": "소비기한까지"
+      }
+    ],
+    "tag": "",
+    "note": "원팩, 집게\n매장 상황에 따라 DID 소분 가능, Price Tag(개봉일~만료일) 부착.원팩 반드시 보관.",
+    "keywords": [],
+    "enabled": true,
+    "order": 143
   }
 ]
