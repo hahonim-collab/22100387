@@ -2960,7 +2960,7 @@
   {
     "id": "prd-1794899205623",
     "category": "토핑",
-    "name": "로즈마리 15PC",
+    "name": "로즈 마리 15PC",
     "storage": "냉장",
     "rules": [
       {
@@ -2972,7 +2972,9 @@
     ],
     "tag": "숫자 Tag + Price Tag",
     "note": "*원팩 보관 필수*",
-    "keywords": [],
+    "keywords": [
+      "로즈마리"
+    ],
     "enabled": true,
     "order": 141
   }
