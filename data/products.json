@@ -2913,5 +2913,27 @@
     "keywords": [],
     "enabled": true,
     "order": 138
+  },
+  {
+    "id": "prd-1794899084043",
+    "category": "티",
+    "name": "캐모마일&유스베리 티",
+    "storage": "실온",
+    "rules": [
+      {
+        "id": "rule-1794899021721-lcjdj",
+        "label": "제조 후",
+        "type": "hour",
+        "value": 12
+      }
+    ],
+    "tag": "숫자 Tag + Price Tag",
+    "note": "워터피처",
+    "keywords": [
+      "캐모마일유스베리티",
+      "캐모마일 유스베리 티"
+    ],
+    "enabled": true,
+    "order": 139
   }
 ]
